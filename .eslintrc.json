@@ -1,0 +1,18 @@
+{
+  "ignorePatterns": ["components/**/*.script.js"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": "plugin:prettier/recommended",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": { "prefer-const": 2, "no-var": 2 }
+}

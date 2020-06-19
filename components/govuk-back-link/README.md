@@ -10,7 +10,6 @@ See: https://design-system.service.gov.uk/components/back-link/
 import 'govuk-webcomponents/components/govuk-back-link.component.js';
 ```
 
-
 **Markup**
 
 ```markup
@@ -18,13 +17,18 @@ import 'govuk-webcomponents/components/govuk-back-link.component.js';
 ```
 
 
-## govuk-back-link
 
-https://design-system.service.gov.uk/components/back-link/
+## &lt;govuk-back-link&gt;
+
 
 ### Properties
 
-| Property | Attribute | Type     |
-|----------|-----------|----------|
-| `label`  | `label`   | `string` |
-| `url`    | `url`     | `string` |
+| Property  |  Type     |
+|-----------|-----------|
+| `url` | `string` |
+| `label` | `string` |
+
+
+
+
+

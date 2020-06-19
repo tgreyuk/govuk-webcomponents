@@ -1,0 +1,344 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "govuk-accordion-section",
+      "path": "./components/govuk-accordion/govuk-accordion-section.component.js",
+      "attributes": [
+        {
+          "name": "heading",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "attribute": "body",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govuk-accordion",
+      "path": "./components/govuk-accordion/govuk-accordion.component.js",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "id",
+          "attribute": "id",
+          "type": "string"
+        }
+      ],
+      "slots": [
+        {
+          "name": "Default",
+          "description": "Accepts x number of govuk-accordion-section elements"
+        }
+      ]
+    },
+    {
+      "name": "govuk-back-link",
+      "path": "./components/govuk-back-link/govuk-back-link.component.js",
+      "description": "https://design-system.service.gov.uk/components/back-link/",
+      "attributes": [
+        {
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "url",
+          "attribute": "url",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govuk-breadcrumbs-item",
+      "path": "./components/govuk-breadcrumbs/govuk-breadcrumbs-item.component.js",
+      "attributes": [
+        {
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "url",
+          "attribute": "url",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govuk-breadcrumbs",
+      "path": "./components/govuk-breadcrumbs/govuk-breadcrumbs.component.js",
+      "attributes": [
+        {
+          "name": "items",
+          "type": "array"
+        }
+      ],
+      "properties": [
+        {
+          "name": "items",
+          "attribute": "items",
+          "type": "array"
+        }
+      ]
+    },
+    {
+      "name": "govuk-button",
+      "path": "./components/govuk-button/govuk-button.component.js",
+      "description": "https://design-system.service.gov.uk/components/button/",
+      "attributes": [
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "description": "If url is set the ement is rendered as an anchor element",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "type": "\"start\"  \\|\"secondary\"\\|\"warning\""
+        },
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "preventDoubleClick",
+          "type": "boolean"
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "url",
+          "attribute": "url",
+          "description": "If url is set the ement is rendered as an anchor element",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "attribute": "type",
+          "type": "\"start\"  \\|\"secondary\"\\|\"warning\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "preventDoubleClick",
+          "attribute": "preventDoubleClick",
+          "type": "boolean"
+        }
+      ],
+      "events": [
+        {
+          "name": "clicked",
+          "description": "Fires when button has been clicked"
+        }
+      ]
+    },
+    {
+      "name": "govuk-date-input",
+      "path": "./components/govuk-date-input/govuk-date-input.component.js"
+    },
+    {
+      "name": "govuk-fieldset",
+      "path": "./components/govuk-fieldset/govuk-fieldset.component.js",
+      "attributes": [
+        {
+          "name": "legend",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "legend",
+          "attribute": "legend",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govuk-text-input",
+      "path": "./components/govuk-text-input/govuk-text-input.component.js",
+      "description": "https://design-system.service.gov.uk/components/text-input/",
+      "attributes": [
+        {
+          "name": "width",
+          "type": "\"20\"  \\|\"10\"\\|\"5\"\\|\"4\"\\|\"3\"\\|\"2\"\\|\"full\"\\|\"three-quarters\"\\|\"two-thirds\"\\|\"one-half\"\\|\"one-third\"\\|\"one-quarter\"",
+          "default": "\"20\""
+        },
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "type": "boolean"
+        }
+      ],
+      "properties": [
+        {
+          "name": "width",
+          "attribute": "width",
+          "type": "\"20\"  \\|\"10\"\\|\"5\"\\|\"4\"\\|\"3\"\\|\"2\"\\|\"full\"\\|\"three-quarters\"\\|\"two-thirds\"\\|\"one-half\"\\|\"one-third\"\\|\"one-quarter\"",
+          "default": "\"20\""
+        },
+        {
+          "name": "id",
+          "attribute": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "attribute": "hint",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "attribute": "pageLevel",
+          "type": "boolean"
+        },
+        {
+          "name": "hintId",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "govuk-textarea",
+      "path": "./components/govuk-textarea/govuk-textarea.component.js",
+      "attributes": [
+        {
+          "name": "rows",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "type": "boolean"
+        }
+      ],
+      "properties": [
+        {
+          "name": "rows",
+          "attribute": "rows",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "id",
+          "attribute": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "attribute": "hint",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "attribute": "pageLevel",
+          "type": "boolean"
+        },
+        {
+          "name": "hintId",
+          "type": "string | undefined"
+        }
+      ]
+    }
+  ]
+}

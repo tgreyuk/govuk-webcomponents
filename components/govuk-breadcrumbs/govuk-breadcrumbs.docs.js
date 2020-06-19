@@ -12,7 +12,6 @@ See: https://design-system.service.gov.uk/components/breadcrumbs/
 import 'govuk-webcomponents/components/govuk-breadcrumbs.component.js';
 \`\`\`
 
-
 **Markup**
 
 \`\`\`markup
@@ -20,20 +19,32 @@ import 'govuk-webcomponents/components/govuk-breadcrumbs.component.js';
 \`\`\`
 
 
-## govuk-breadcrumbs-item
+
+## &lt;govuk-breadcrumbs&gt;
+
 
 ### Properties
 
-| Property | Attribute | Type     |
-|----------|-----------|----------|
-| \`label\`  | \`label\`   | \`string\` |
-| \`url\`    | \`url\`     | \`string\` |
+| Property  |  Type     |
+|-----------|-----------|
+| \`items\` | \`array\` |
 
-## govuk-breadcrumbs
+
+
+
+
+,## &lt;govuk-breadcrumbs-item&gt;
+
 
 ### Properties
 
-| Property | Attribute | Type    |
-|----------|-----------|---------|
-| \`items\`  | \`items\`   | \`array\` |
+| Property  |  Type     |
+|-----------|-----------|
+| \`url\` | \`string\` |
+| \`label\` | \`string\` |
+
+
+
+
+
 `;

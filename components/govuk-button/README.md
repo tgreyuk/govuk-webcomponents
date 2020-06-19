@@ -10,7 +10,6 @@ See: https://design-system.service.gov.uk/components/button/
 import 'govuk-webcomponents/components/govuk-button.component.js';
 ```
 
-
 **Markup**
 
 ```markup
@@ -18,22 +17,26 @@ import 'govuk-webcomponents/components/govuk-button.component.js';
 ```
 
 
-## govuk-button
 
-https://design-system.service.gov.uk/components/button/
+## &lt;govuk-button&gt;
+
 
 ### Properties
 
-| Property             | Attribute            | Type                                  | Description                                      |
-|----------------------|----------------------|---------------------------------------|--------------------------------------------------|
-| `disabled`           | `disabled`           | `boolean`                             |                                                  |
-| `label`              | `label`              | `string`                              |                                                  |
-| `preventDoubleClick` | `preventDoubleClick` | `boolean`                             |                                                  |
-| `type`               | `type`               | `"start"  \\|"secondary"\\|"warning"` |                                                  |
-| `url`                | `url`                | `string`                              | If url is set the ement is rendered as an anchor element |
+| Property  |  Type     |
+|-----------|-----------|
+| `label` | `string` |
+| `url` | `string` |
+| `type` | `"start"  \|"secondary"\|"warning"` |
+| `disabled` | `boolean` |
+| `preventDoubleClick` | `boolean` |
+
+
+
 
 ### Events
 
-| Event     | Description                        |
-|-----------|------------------------------------|
-| `clicked` | Fires when button has been clicked |
+| Name  |  Description     |
+|-----------|-----------|
+| `clicked` | `Fires when button has been clicked` |
+

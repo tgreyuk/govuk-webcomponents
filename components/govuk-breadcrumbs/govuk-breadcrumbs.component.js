@@ -1,9 +1,9 @@
-import { html } from 'lit-element';
+import { html, LitElement } from 'lit-element';
 import componentStyles from './govuk-breadcrumbs.styles';
-import { BaseElement } from '../govuk-base/govuk-base';
-import './govuk-breadcrumbs.component.item';
+import './govuk-breadcrumbs-item.component';
+import { replaceSlot } from '../utils';
 
-export class BreadcrumbsComponent extends BaseElement {
+export class BreadcrumbsComponent extends LitElement {
   static get properties() {
     return {
       items: { type: Array },
@@ -23,7 +23,7 @@ export class BreadcrumbsComponent extends BaseElement {
   }
 
   firstUpdated() {
-    this.replaceSlot();
+    replaceSlot(this.shadowRoot);
   }
   render() {
     return html`<div class="govuk-breadcrumbs">

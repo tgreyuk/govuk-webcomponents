@@ -12,7 +12,6 @@ See: https://design-system.service.gov.uk/components/accordion/
 import 'govuk-webcomponents/components/govuk-accordion.component.js';
 \`\`\`
 
-
 **Markup**
 
 \`\`\`markup
@@ -20,26 +19,37 @@ import 'govuk-webcomponents/components/govuk-accordion.component.js';
 \`\`\`
 
 
-## govuk-accordion
+
+## &lt;govuk-accordion&gt;
+
 
 ### Properties
 
-| Property | Attribute | Type     |
-|----------|-----------|----------|
-| \`id\`     | \`id\`      | \`string\` |
+| Property  |  Type     |
+|-----------|-----------|
+| \`id\` | \`string\` |
+
 
 ### Slots
 
-| Name      | Description                                      |
-|-----------|--------------------------------------------------|
-| \`Default\` | Accepts x number of govuk-accordion-section elements |
+| Name  |  Description     |
+|-----------|-----------|
+| \`Default\` | \`Accepts x number of govuk-accordion-section elements\` |
 
-## govuk-accordion-section
+
+
+,## &lt;govuk-accordion-section&gt;
+
 
 ### Properties
 
-| Property  | Attribute | Type     |
-|-----------|-----------|----------|
-| \`body\`    | \`body\`    | \`string\` |
-| \`heading\` | \`heading\` | \`string\` |
+| Property  |  Type     |
+|-----------|-----------|
+| \`heading\` | \`string\` |
+| \`body\` | \`string\` |
+
+
+
+
+
 `;

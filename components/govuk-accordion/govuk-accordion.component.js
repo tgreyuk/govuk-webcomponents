@@ -1,14 +1,14 @@
-import { html } from 'lit-element';
+import { html, LitElement } from 'lit-element';
 import componentStyles from './govuk-accordion.styles';
 import { Accordion } from './govuk-accordion.script';
-import './govuk-accordion.component.section';
-import { BaseElement } from '../govuk-base/govuk-base';
+import './govuk-accordion-section.component';
+import { replaceSlot } from '../utils';
 
 /**
  * @slot Default - Accepts x number of govuk-accordion-section elements
  */
 
-export class AccordionComponent extends BaseElement {
+export class AccordionComponent extends LitElement {
   static get properties() {
     return {
       id: { type: String },
@@ -28,7 +28,7 @@ export class AccordionComponent extends BaseElement {
   }
 
   firstUpdated() {
-    this.replaceSlot((accordion) => {
+    replaceSlot(this.shadowRoot, (accordion) => {
       new Accordion(accordion).init();
     });
   }

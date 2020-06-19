@@ -12,7 +12,6 @@ See: https://design-system.service.gov.uk/components/date-input/
 import 'govuk-webcomponents/components/govuk-date-input.component.js';
 \`\`\`
 
-
 **Markup**
 
 \`\`\`markup
@@ -20,5 +19,13 @@ import 'govuk-webcomponents/components/govuk-date-input.component.js';
 \`\`\`
 
 
-## govuk-date-input
+
+## &lt;govuk-date-input&gt;
+
+
+
+
+
+
+
 `;

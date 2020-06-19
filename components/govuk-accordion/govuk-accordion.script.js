@@ -1,8 +1,8 @@
 // this file is auto-generated into required format
 // source: node_modules/govuk-frontend/govuk//Users/tomgrey/Projects/govuk-webcomponents/node_modules/govuk-frontend/govuk/components/accordion/accordion.js
 function nodeListForEach (nodes, callback) {
-  return nodes.forEach(callback);
-}
+    return nodes.forEach(callback);
+  }
 export function Accordion ($module) {
   this.$module = $module;
   this.moduleId = $module.getAttribute('id');

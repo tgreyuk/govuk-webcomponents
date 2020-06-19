@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs-extra');
-const { camelCase, startCase } = require('lodash');
+const { camelCase, startCase, sortBy } = require('lodash');
 const globby = require('globby');
 const chalk = require('chalk');
 
@@ -9,13 +9,16 @@ const chalk = require('chalk');
     gitignore: true,
   });
 
-  const components = stories.map((story) => {
-    return {
-      el: path.basename(path.dirname(story)),
-      name: camelCase(path.dirname(story).split('govuk-')[1]),
-      path: story,
-    };
-  });
+  const components = sortBy(
+    stories.map((story) => {
+      return {
+        el: path.basename(path.dirname(story)),
+        name: camelCase(path.dirname(story).split('govuk-')[1]),
+        path: story,
+      };
+    }),
+    'el',
+  );
 
   const html = `<!DOCTYPE html>
 <html lang="en-GB">

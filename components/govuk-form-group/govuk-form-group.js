@@ -8,6 +8,7 @@ export class FormGroup extends LitElement {
       name: { type: String },
       label: { type: String },
       hint: { type: String },
+      message: { type: String },
       pageLevel: { type: Boolean },
     };
   }
@@ -36,6 +37,15 @@ export class FormGroup extends LitElement {
           </span>`
         : ''}
       ${this.renderControl()}
+      ${this.message
+        ? html` <span
+            id="${this.id}-info"
+            class="govuk-hint govuk-character-count__message"
+            aria-live="polite"
+          >
+            ${this.message}
+          </span>`
+        : ``}
     </div>`;
   }
 }

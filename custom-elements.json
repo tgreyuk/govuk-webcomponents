@@ -53,7 +53,6 @@
     {
       "name": "govuk-back-link",
       "path": "./components/govuk-back-link/govuk-back-link.component.js",
-      "description": "https://design-system.service.gov.uk/components/back-link/",
       "attributes": [
         {
           "name": "url",
@@ -183,6 +182,180 @@
       ]
     },
     {
+      "name": "govuk-textarea",
+      "path": "./components/govuk-textarea/govuk-textarea.component.js",
+      "attributes": [
+        {
+          "name": "rows",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "type": "boolean"
+        }
+      ],
+      "properties": [
+        {
+          "name": "rows",
+          "attribute": "rows",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "id",
+          "attribute": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "attribute": "hint",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "attribute": "message",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "attribute": "pageLevel",
+          "type": "boolean"
+        },
+        {
+          "name": "hintId",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "govuk-character-count",
+      "path": "./components/govuk-character-count/govuk-character-count.component.js",
+      "attributes": [
+        {
+          "name": "maxwords",
+          "type": "number"
+        },
+        {
+          "name": "maxlength",
+          "type": "number",
+          "default": "200"
+        },
+        {
+          "name": "rows",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "type": "boolean"
+        }
+      ],
+      "properties": [
+        {
+          "name": "maxwords",
+          "attribute": "maxwords",
+          "type": "number"
+        },
+        {
+          "name": "maxlength",
+          "attribute": "maxlength",
+          "type": "number",
+          "default": "200"
+        },
+        {
+          "name": "rows",
+          "attribute": "rows",
+          "type": "number",
+          "default": "5"
+        },
+        {
+          "name": "id",
+          "attribute": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "attribute": "hint",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "attribute": "message",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "attribute": "pageLevel",
+          "type": "boolean"
+        },
+        {
+          "name": "hintId",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
       "name": "govuk-date-input",
       "path": "./components/govuk-date-input/govuk-date-input.component.js"
     },
@@ -230,6 +403,10 @@
           "type": "string"
         },
         {
+          "name": "message",
+          "type": "string"
+        },
+        {
           "name": "pageLevel",
           "type": "boolean"
         }
@@ -262,6 +439,11 @@
           "type": "string"
         },
         {
+          "name": "message",
+          "attribute": "message",
+          "type": "string"
+        },
+        {
           "name": "pageLevel",
           "attribute": "pageLevel",
           "type": "boolean"
@@ -273,70 +455,19 @@
       ]
     },
     {
-      "name": "govuk-textarea",
-      "path": "./components/govuk-textarea/govuk-textarea.component.js",
+      "name": "govuk-warning-text",
+      "path": "./components/govuk-warning-text/govuk-warning-text.component.js",
       "attributes": [
         {
-          "name": "rows",
-          "type": "number",
-          "default": "5"
-        },
-        {
-          "name": "id",
+          "name": "text",
           "type": "string"
-        },
-        {
-          "name": "name",
-          "type": "string"
-        },
-        {
-          "name": "label",
-          "type": "string"
-        },
-        {
-          "name": "hint",
-          "type": "string"
-        },
-        {
-          "name": "pageLevel",
-          "type": "boolean"
         }
       ],
       "properties": [
         {
-          "name": "rows",
-          "attribute": "rows",
-          "type": "number",
-          "default": "5"
-        },
-        {
-          "name": "id",
-          "attribute": "id",
+          "name": "text",
+          "attribute": "text",
           "type": "string"
-        },
-        {
-          "name": "name",
-          "attribute": "name",
-          "type": "string"
-        },
-        {
-          "name": "label",
-          "attribute": "label",
-          "type": "string"
-        },
-        {
-          "name": "hint",
-          "attribute": "hint",
-          "type": "string"
-        },
-        {
-          "name": "pageLevel",
-          "attribute": "pageLevel",
-          "type": "boolean"
-        },
-        {
-          "name": "hintId",
-          "type": "string | undefined"
         }
       ]
     }

@@ -1,10 +1,6 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govuk-back-link.styles';
 
-/**
- * https://design-system.service.gov.uk/components/back-link/
- */
-
 export class BackLinkComponent extends LitElement {
   static get properties() {
     return {

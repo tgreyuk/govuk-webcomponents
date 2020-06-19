@@ -30,6 +30,7 @@ import 'govuk-webcomponents/components/govuk-textarea.component.js';
 | `name` | `string` |
 | `label` | `string` |
 | `hint` | `string` |
+| `message` | `string` |
 | `pageLevel` | `boolean` |
 
 

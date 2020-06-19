@@ -33,7 +33,8 @@ import 'govuk-webcomponents/components/govuk-breadcrumbs.component.js';
 
 
 
-,## &lt;govuk-breadcrumbs-item&gt;
+
+## &lt;govuk-breadcrumbs-item&gt;
 
 
 ### Properties

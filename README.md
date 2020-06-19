@@ -8,7 +8,7 @@ Please note this package is under beta - more detailed documentation and compone
 
 ## Components
 
-- [\<govuk-accordion>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-accordion)
+- [\<govuk-accordion>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govuk-accordion/README.md)
 - [\<govuk-back-link>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-back-link)
 - [\<govuk-breadcrumbs>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-breadcrumbs)
 - [\<govuk-button>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-button)

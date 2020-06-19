@@ -33,11 +33,15 @@ import 'govuk-webcomponents/components/${component}.component.js';
 <${component}></${component}>
 \`\`\`\n\n
 
-${components.reverse().map((component) => {
-  const name = path.basename(component, '.component.js');
+${components
+  .reverse()
+  .map((component) => {
+    const name = path.basename(component, '.component.js');
 
-  const customElement = customElements.find((element) => element.name === name);
-  return `## &lt;${name}&gt;
+    const customElement = customElements.find(
+      (element) => element.name === name,
+    );
+    return `## &lt;${name}&gt;
 
 ${helpers.propertiesTable(customElement.attributes)}
 
@@ -46,7 +50,8 @@ ${helpers.slotsTable(customElement.slots)}
 ${helpers.eventsTable(customElement.events)}
 
 `;
-})}`;
+  })
+  .join('\n')}`;
 
   fs.outputFileSync(`${folder}/README.md`, md);
   fs.outputFileSync(

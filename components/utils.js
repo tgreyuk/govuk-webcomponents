@@ -10,3 +10,14 @@ export const replaceSlot = (shadowRoot, cb = null) => {
     }
   }, 1);
 };
+
+export const replaceElement = (element, cb = null) => {
+  setTimeout(() => {
+    const elementHTML = element.shadowRoot.innerHTML;
+    const container = element.parentNode;
+    container.innerHTML = elementHTML;
+    if (cb) {
+      cb(container);
+    }
+  }, 1);
+};

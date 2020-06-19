@@ -14,7 +14,7 @@
     "build:styles": "node ./tasks/components/styles.js",
     "build:scripts": "node ./tasks/components/scripts.js",
     "build:custom-elements": "wca analyze components/**/*.component.js --outFile custom-elements.json",
-    "build:docs": "node ./tasks/docs/readme.js",
+    "build:docs": "node ./tasks/docs/docs.js",
     "watch": "npm-run-all --parallel watch:*",
     "watch:styles": "node ./tasks/components/styles.js --watch",
     "lint": "npm run lint:eslint && npm run lint:prettier",

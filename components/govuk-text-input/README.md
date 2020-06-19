@@ -30,6 +30,7 @@ import 'govuk-webcomponents/components/govuk-text-input.component.js';
 | `name` | `string` |
 | `label` | `string` |
 | `hint` | `string` |
+| `message` | `string` |
 | `pageLevel` | `boolean` |
 
 

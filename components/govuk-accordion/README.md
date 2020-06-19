@@ -36,7 +36,8 @@ import 'govuk-webcomponents/components/govuk-accordion.component.js';
 
 
 
-,## &lt;govuk-accordion-section&gt;
+
+## &lt;govuk-accordion-section&gt;
 
 
 ### Properties

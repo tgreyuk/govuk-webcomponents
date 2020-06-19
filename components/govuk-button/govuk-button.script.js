@@ -1,8 +1,6 @@
 // this file is auto-generated into required format
 // source: node_modules/govuk-frontend/govuk//Users/tomgrey/Projects/govuk-webcomponents/node_modules/govuk-frontend/govuk/components/button/button.js
-function nodeListForEach (nodes, callback) {
-  return nodes.forEach(callback);
-}
+
 var KEY_SPACE = 32;
 var DEBOUNCE_TIMEOUT_IN_SECONDS = 1;
 

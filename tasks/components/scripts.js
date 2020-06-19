@@ -23,6 +23,12 @@ const basedir = path.resolve(
   'components',
 );
 
+const depFunctions = {
+  nodeListForEach: `function nodeListForEach (nodes, callback) {
+    return nodes.forEach(callback);
+  }`,
+};
+
 const compileScript = (component, options) => {
   const file = `${basedir}/${component}/${component}.js`;
   const script = fs.readFileSync(file);
@@ -41,8 +47,10 @@ const compileScript = (component, options) => {
     outfile,
     `// this file is auto-generated into required format
 // source: node_modules/govuk-frontend/govuk/${file}
-function nodeListForEach (nodes, callback) {
-  return nodes.forEach(callback);
+${
+  options.functions
+    ? `${options.functions.map((fn) => depFunctions[fn]).join('\n')}`
+    : ``
 }
 ${parsedScript.join('').replace('function', 'export function')}\n`,
   );
@@ -53,5 +61,10 @@ ${parsedScript.join('').replace('function', 'export function')}\n`,
   );
 };
 
-compileScript('accordion', { dropRight: 5, dropLeft: 760 });
+compileScript('accordion', {
+  dropRight: 5,
+  dropLeft: 760,
+  functions: ['nodeListForEach'],
+});
 compileScript('button', { dropRight: 5, dropLeft: 661 });
+compileScript('character-count', { dropRight: 5, dropLeft: 1016 });

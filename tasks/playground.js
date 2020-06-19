@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs-extra');
-const { camelCase } = require('lodash');
+const { camelCase, startCase } = require('lodash');
 const globby = require('globby');
 const chalk = require('chalk');
 
@@ -11,6 +11,7 @@ const chalk = require('chalk');
 
   const components = stories.map((story) => {
     return {
+      el: path.basename(path.dirname(story)),
       name: camelCase(path.dirname(story).split('govuk-')[1]),
       path: story,
     };
@@ -22,10 +23,38 @@ const chalk = require('chalk');
     <meta charset="utf-8" />
     <style>
     body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      padding: 10px 30px;
+      padding: 10px 30px 30px 10px;
     }
-    h2 {background:#eee;padding:10px;margin:30px 0 20px 0;}
+    h1 {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom:40px;
+    }
+    h2 {
+      background: #eee;
+      padding: 10px;
+      margin: 30px 0 20px 0;
+      font-weight: 500;
+    }
+    ul {
+      margin:0;
+      padding:0;
+      column-count: 4;
+    }
+    li {
+      margin:0 0 10px 20px;
+
+    }
+
+    @media only screen and (max-width: 700px) {
+      body {
+        padding:10px;
+      }
+      ul {
+        column-count: 2;
+      }
+
+    }
     </style>
   </head>
   <body>
@@ -39,15 +68,24 @@ const chalk = require('chalk');
             `import * as ${component.name} from '${component.path}';`,
         )
         .join('\n')}
-      const componentTemplate = (component) => html\`<h2>
-          \${component.default.title}
-        </h2>
-        \${Object.entries(component)
+      const componentTemplate = (component) => html\`
+      <h2 id=\${component.default.component}>\${component.default.title}</h2>
+      \${Object.entries(component)
           .filter(([a, b]) => a !== 'default')
-          .map(([a, b]) => unsafeHTML(\`<div>\${b()}</div>\`))} \`;
+          .map(([a, b]) => unsafeHTML(\`<div class="story">\${b()}</div>\`))} \`;
       const template = () => {
         return html\`
-
+          <h1>Components</h1>
+          <ul>
+          ${components
+            .map(
+              (component) =>
+                `<li><a href="#${component.el}">${startCase(
+                  component.name,
+                )}</a></li>`,
+            )
+            .join('\n')}
+          </ul>
           ${components
             .map((component) => ` \${componentTemplate(${component.name})}`)
             .join('\n')}

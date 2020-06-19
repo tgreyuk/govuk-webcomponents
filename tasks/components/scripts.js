@@ -16,6 +16,7 @@ const splitlines = (string) => {
 const basedir = path.resolve(
   __dirname,
   '..',
+  '..',
   'node_modules',
   'govuk-frontend',
   'govuk',
@@ -30,6 +31,7 @@ const compileScript = (component, options) => {
   parsedScript = drop(parsedScript, options.dropLeft);
   const outfile = path.resolve(
     __dirname,
+    '..',
     '..',
     'components',
     `govuk-${component}`,

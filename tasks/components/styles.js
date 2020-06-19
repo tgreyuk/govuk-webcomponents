@@ -8,7 +8,7 @@ const chalk = require('chalk');
 const argv = require('minimist')(process.argv.slice(2));
 require('cssnano');
 
-const includePaths = [path.resolve(__dirname, '..', 'node_modules')];
+const includePaths = [path.resolve(__dirname, '..', '..', 'node_modules')];
 
 const compileFile = (file) => {
   const basename = path.basename(file, '.scss');
@@ -41,7 +41,9 @@ const compileFile = (file) => {
     .then((result) => {
       const template = `// this file is auto-generated for LitElement consumption
 // source: node_modules/govuk-frontend/govuk/${file}
-import {css} from 'lit-element';\nexport default css\`${result.css.toString()}\`\n`;
+import {css} from 'lit-element';\nexport default css\`${result.css
+        .toString()
+        .replace(/\!-width/g, '\\!-width')}\`\n`;
       fs.outputFileSync(outfile, template);
       console.log(
         `[styles]: ${chalk.green(

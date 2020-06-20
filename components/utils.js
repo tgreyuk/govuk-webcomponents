@@ -1,5 +1,4 @@
-export const replaceSlot = (shadowRoot, cb = null) => {
-  const slot = shadowRoot.querySelector('slot');
+export const replaceSlot = (slot, cb = null) => {
   const nodes = slot.assignedNodes().filter((node) => !!node.tagName);
   setTimeout(() => {
     const slotHTML = nodes.map((node) => node.shadowRoot.innerHTML).join('');
@@ -9,6 +8,11 @@ export const replaceSlot = (shadowRoot, cb = null) => {
       cb(container);
     }
   }, 1);
+};
+
+export const wrapEl = (el, wrapper) => {
+  el.parentNode.insertBefore(wrapper, el);
+  wrapper.appendChild(el);
 };
 
 export const replaceElement = (element, cb = null) => {

@@ -4,10 +4,6 @@ import { classMap } from 'lit-html/directives/class-map';
 import componentStyles from './govukwc-text-input.styles';
 import { FormGroup } from '../form-group/form-group';
 
-/**
- * https://design-system.service.gov.uk/components/text-input/
- */
-
 export class TextInputComponent extends FormGroup {
   static get properties() {
     return {

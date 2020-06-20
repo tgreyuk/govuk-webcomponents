@@ -549,6 +549,29 @@
       ]
     },
     {
+      "name": "govukwc-phase-banner",
+      "path": "./components/govukwc-phase-banner/govukwc-phase-banner.component.js",
+      "attributes": [
+        {
+          "name": "tag",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "tag",
+          "attribute": "tag",
+          "type": "string"
+        }
+      ],
+      "slots": [
+        {
+          "name": "Default",
+          "description": "Banner content area"
+        }
+      ]
+    },
+    {
       "name": "govukwc-radio",
       "path": "./components/govukwc-radios/govukwc-radio.component.js",
       "attributes": [

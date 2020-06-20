@@ -516,6 +516,16 @@
       ]
     },
     {
+      "name": "govukwc-inset-text",
+      "path": "./components/govukwc-inset-text/govukwc-inset-text.component.js",
+      "slots": [
+        {
+          "name": "Default",
+          "description": "Inset text content area"
+        }
+      ]
+    },
+    {
       "name": "govukwc-radio",
       "path": "./components/govukwc-radios/govukwc-radio.component.js",
       "attributes": [

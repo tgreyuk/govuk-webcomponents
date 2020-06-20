@@ -28,7 +28,8 @@ export class AccordionComponent extends LitElement {
   }
 
   firstUpdated() {
-    replaceSlot(this.shadowRoot, (accordion) => {
+    const slot = this.shadowRoot.querySelector('slot');
+    replaceSlot(slot, (accordion) => {
       new Accordion(accordion).init();
     });
   }

@@ -356,8 +356,48 @@
       ]
     },
     {
-      "name": "govuk-date-input",
-      "path": "./components/govuk-date-input/govuk-date-input.component.js"
+      "name": "govuk-checkbox",
+      "path": "./components/govuk-checkboxes/govuk-checkbox.component.js",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "id",
+          "attribute": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string"
+        }
+      ]
     },
     {
       "name": "govuk-fieldset",
@@ -366,12 +406,121 @@
         {
           "name": "legend",
           "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
         }
       ],
       "properties": [
         {
           "name": "legend",
           "attribute": "legend",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "attribute": "hint",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govuk-checkboxes",
+      "path": "./components/govuk-checkboxes/govuk-checkboxes.component.js",
+      "attributes": [
+        {
+          "name": "legend",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "legend",
+          "attribute": "legend",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "attribute": "hint",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govuk-date-input",
+      "path": "./components/govuk-date-input/govuk-date-input.component.js"
+    },
+    {
+      "name": "govuk-radio",
+      "path": "./components/govuk-radios/govuk-radio.component.js",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "id",
+          "attribute": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govuk-radios",
+      "path": "./components/govuk-radios/govuk-radios.component.js",
+      "attributes": [
+        {
+          "name": "legend",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "legend",
+          "attribute": "legend",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "attribute": "hint",
           "type": "string"
         }
       ]

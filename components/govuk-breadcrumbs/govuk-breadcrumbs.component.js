@@ -23,7 +23,8 @@ export class BreadcrumbsComponent extends LitElement {
   }
 
   firstUpdated() {
-    replaceSlot(this.shadowRoot);
+    const slot = this.shadowRoot.querySelector('slot');
+    replaceSlot(slot);
   }
   render() {
     return html`<div class="govuk-breadcrumbs">

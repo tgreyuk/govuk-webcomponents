@@ -26,6 +26,7 @@ import 'govuk-webcomponents/components/govuk-fieldset.component.js';
 | Property  |  Type     |
 |-----------|-----------|
 | `legend` | `string` |
+| `hint` | `string` |
 
 
 

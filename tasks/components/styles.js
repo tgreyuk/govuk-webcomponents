@@ -45,11 +45,7 @@ import {css} from 'lit-element';\nexport default css\`${result.css
         .toString()
         .replace(/\!-width/g, '\\!-width')}\`\n`;
       fs.outputFileSync(outfile, template);
-      console.log(
-        `[styles]: ${chalk.green(
-          'success',
-        )} ${basename} component styles written`,
-      );
+      console.log(`[styles]: ${chalk.green('success')} ${basename}.js written`);
     });
 };
 

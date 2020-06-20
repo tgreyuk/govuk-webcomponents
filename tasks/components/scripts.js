@@ -40,8 +40,8 @@ const compileScript = (component, options) => {
     '..',
     '..',
     'components',
-    `govuk-${component}`,
-    `govuk-${component}.script.js`,
+    `govukwc-${component}`,
+    `govukwc-${component}.script.js`,
   );
   fs.outputFileSync(
     outfile,

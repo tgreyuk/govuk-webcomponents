@@ -13,7 +13,7 @@ const chalk = require('chalk');
     stories.map((story) => {
       return {
         el: path.basename(path.dirname(story)),
-        name: camelCase(path.dirname(story).split('govuk-')[1]),
+        name: camelCase(path.dirname(story).split('govukwc-')[1]),
         path: story,
       };
     }),
@@ -28,23 +28,23 @@ const chalk = require('chalk');
     body {
       padding: 10px 30px 30px 10px;
     }
-    h1 {
+    h1.playground-title {
       text-align: center;
       font-weight: 500;
       margin-bottom:40px;
     }
-    h2 {
+    h2.playground-subtitle {
       background: #eee;
       padding: 10px;
       margin: 30px 0 20px 0;
       font-weight: 500;
     }
-    ul {
+    ul.playground-menu {
       margin:0;
       padding:0;
       column-count: 4;
     }
-    li {
+    ul.playground-menu li {
       margin:0 0 10px 20px;
 
     }
@@ -53,7 +53,7 @@ const chalk = require('chalk');
       body {
         padding:10px;
       }
-      ul {
+      ul.playground-menu {
         column-count: 2;
       }
 
@@ -72,14 +72,14 @@ const chalk = require('chalk');
         )
         .join('\n')}
       const componentTemplate = (component) => html\`
-      <h2 id=\${component.default.component}>\${component.default.title}</h2>
+      <h2 class="playground-subtitle" id=\${component.default.component}>\${component.default.title}</h2>
       \${Object.entries(component)
           .filter(([a, b]) => a !== 'default')
           .map(([a, b]) => unsafeHTML(\`<div class="story">\${b()}</div>\`))} \`;
       const template = () => {
         return html\`
-          <h1>Components</h1>
-          <ul>
+          <h1 class="playground-title">Components</h1>
+          <ul class="playground-menu">
           ${components
             .map(
               (component) =>

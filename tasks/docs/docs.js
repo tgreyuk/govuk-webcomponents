@@ -14,7 +14,7 @@ const compileDocs = (file) => {
   const components = fs
     .readdirSync(folder)
     .filter((file) => file.endsWith('.component.js'));
-  const originalName = file.split('govuk-')[1];
+  const originalName = file.split('govukwc-')[1];
   const md = `# ${startCase(originalName)}
 
 See: https://design-system.service.gov.uk/components/${originalName}
@@ -24,7 +24,7 @@ See: https://design-system.service.gov.uk/components/${originalName}
 **Js**
 
 \`\`\`javascript
-import 'govuk-webcomponents/components/${component}.component.js';
+import 'govukwc-webcomponents/components/${component}.component.js';
 \`\`\`
 
 **Markup**
@@ -52,7 +52,6 @@ ${helpers.eventsTable(customElement.events)}
 `;
   })
   .join('\n')}`;
-
   fs.outputFileSync(`${folder}/README.md`, md);
   fs.outputFileSync(
     `${folder}/${component}.docs.js`,
@@ -61,7 +60,7 @@ ${helpers.eventsTable(customElement.events)}
 export const readme = \`${md.replace(/`/g, '\\`')}\`;\n`,
   );
   console.log(
-    `[docs]: ${chalk.green('success')} ${file} README written to file`,
+    `[docs]: ${chalk.green('success')} ${component} README written to file`,
   );
 };
 

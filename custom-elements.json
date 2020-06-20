@@ -2,8 +2,8 @@
   "version": "experimental",
   "tags": [
     {
-      "name": "govuk-accordion-section",
-      "path": "./components/govuk-accordion/govuk-accordion-section.component.js",
+      "name": "govukwc-accordion-section",
+      "path": "./components/govukwc-accordion/govukwc-accordion-section.component.js",
       "attributes": [
         {
           "name": "heading",
@@ -28,8 +28,8 @@
       ]
     },
     {
-      "name": "govuk-accordion",
-      "path": "./components/govuk-accordion/govuk-accordion.component.js",
+      "name": "govukwc-accordion",
+      "path": "./components/govukwc-accordion/govukwc-accordion.component.js",
       "attributes": [
         {
           "name": "id",
@@ -51,8 +51,8 @@
       ]
     },
     {
-      "name": "govuk-back-link",
-      "path": "./components/govuk-back-link/govuk-back-link.component.js",
+      "name": "govukwc-back-link",
+      "path": "./components/govukwc-back-link/govukwc-back-link.component.js",
       "attributes": [
         {
           "name": "url",
@@ -77,8 +77,8 @@
       ]
     },
     {
-      "name": "govuk-breadcrumbs-item",
-      "path": "./components/govuk-breadcrumbs/govuk-breadcrumbs-item.component.js",
+      "name": "govukwc-breadcrumbs-item",
+      "path": "./components/govukwc-breadcrumbs/govukwc-breadcrumbs-item.component.js",
       "attributes": [
         {
           "name": "url",
@@ -103,8 +103,8 @@
       ]
     },
     {
-      "name": "govuk-breadcrumbs",
-      "path": "./components/govuk-breadcrumbs/govuk-breadcrumbs.component.js",
+      "name": "govukwc-breadcrumbs",
+      "path": "./components/govukwc-breadcrumbs/govukwc-breadcrumbs.component.js",
       "attributes": [
         {
           "name": "items",
@@ -120,8 +120,8 @@
       ]
     },
     {
-      "name": "govuk-button",
-      "path": "./components/govuk-button/govuk-button.component.js",
+      "name": "govukwc-button",
+      "path": "./components/govukwc-button/govukwc-button.component.js",
       "description": "https://design-system.service.gov.uk/components/button/",
       "attributes": [
         {
@@ -182,8 +182,8 @@
       ]
     },
     {
-      "name": "govuk-textarea",
-      "path": "./components/govuk-textarea/govuk-textarea.component.js",
+      "name": "govukwc-textarea",
+      "path": "./components/govukwc-textarea/govukwc-textarea.component.js",
       "attributes": [
         {
           "name": "rows",
@@ -259,8 +259,8 @@
       ]
     },
     {
-      "name": "govuk-character-count",
-      "path": "./components/govuk-character-count/govuk-character-count.component.js",
+      "name": "govukwc-character-count",
+      "path": "./components/govukwc-character-count/govukwc-character-count.component.js",
       "attributes": [
         {
           "name": "maxwords",
@@ -356,8 +356,8 @@
       ]
     },
     {
-      "name": "govuk-checkbox",
-      "path": "./components/govuk-checkboxes/govuk-checkbox.component.js",
+      "name": "govukwc-checkbox",
+      "path": "./components/govukwc-checkboxes/govukwc-checkbox.component.js",
       "attributes": [
         {
           "name": "id",
@@ -400,8 +400,8 @@
       ]
     },
     {
-      "name": "govuk-fieldset",
-      "path": "./components/govuk-fieldset/govuk-fieldset.component.js",
+      "name": "govukwc-fieldset",
+      "path": "./components/govukwc-fieldset/govukwc-fieldset.component.js",
       "attributes": [
         {
           "name": "legend",
@@ -426,8 +426,8 @@
       ]
     },
     {
-      "name": "govuk-checkboxes",
-      "path": "./components/govuk-checkboxes/govuk-checkboxes.component.js",
+      "name": "govukwc-checkboxes",
+      "path": "./components/govukwc-checkboxes/govukwc-checkboxes.component.js",
       "attributes": [
         {
           "name": "legend",
@@ -452,12 +452,12 @@
       ]
     },
     {
-      "name": "govuk-date-input",
-      "path": "./components/govuk-date-input/govuk-date-input.component.js"
+      "name": "govukwc-date-input",
+      "path": "./components/govukwc-date-input/govukwc-date-input.component.js"
     },
     {
-      "name": "govuk-radio",
-      "path": "./components/govuk-radios/govuk-radio.component.js",
+      "name": "govukwc-radio",
+      "path": "./components/govukwc-radios/govukwc-radio.component.js",
       "attributes": [
         {
           "name": "id",
@@ -500,8 +500,8 @@
       ]
     },
     {
-      "name": "govuk-radios",
-      "path": "./components/govuk-radios/govuk-radios.component.js",
+      "name": "govukwc-radios",
+      "path": "./components/govukwc-radios/govukwc-radios.component.js",
       "attributes": [
         {
           "name": "legend",
@@ -526,8 +526,8 @@
       ]
     },
     {
-      "name": "govuk-text-input",
-      "path": "./components/govuk-text-input/govuk-text-input.component.js",
+      "name": "govukwc-text-input",
+      "path": "./components/govukwc-text-input/govukwc-text-input.component.js",
       "description": "https://design-system.service.gov.uk/components/text-input/",
       "attributes": [
         {
@@ -604,8 +604,8 @@
       ]
     },
     {
-      "name": "govuk-warning-text",
-      "path": "./components/govuk-warning-text/govuk-warning-text.component.js",
+      "name": "govukwc-warning-text",
+      "path": "./components/govukwc-warning-text/govukwc-warning-text.component.js",
       "attributes": [
         {
           "name": "text",

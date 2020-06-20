@@ -8,10 +8,10 @@ Please note this package is under beta - more detailed documentation and compone
 
 ## Components
 
-- [\<govuk-accordion>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govuk-accordion/README.md)
-- [\<govuk-back-link>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-back-link)
-- [\<govuk-breadcrumbs>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-breadcrumbs)
-- [\<govuk-button>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-button)
-- [\<govuk-date-input>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-date-input)
-- [\<govuk-text-input>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-text-input)
-- [\<govuk-textarea>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-textarea)
+- [\<govukwc-accordion>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govuk-accordion/README.md)
+- [\<govukwc-back-link>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-back-link)
+- [\<govukwc-breadcrumbs>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-breadcrumbs)
+- [\<govukwc-button>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-button)
+- [\<govukwc-date-input>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-date-input)
+- [\<govukwc-text-input>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-text-input)
+- [\<govukwc-textarea>](https://github.com/tgreyuk/govuk-webcomponents/tree/master/components/govuk-textarea)

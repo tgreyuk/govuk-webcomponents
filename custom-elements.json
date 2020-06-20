@@ -456,6 +456,29 @@
       "path": "./components/govukwc-date-input/govukwc-date-input.component.js"
     },
     {
+      "name": "govukwc-details",
+      "path": "./components/govukwc-details/govukwc-details.component.js",
+      "attributes": [
+        {
+          "name": "summary",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "summary",
+          "attribute": "summary",
+          "type": "string"
+        }
+      ],
+      "slots": [
+        {
+          "name": "Default",
+          "description": "Details content area"
+        }
+      ]
+    },
+    {
       "name": "govukwc-radio",
       "path": "./components/govukwc-radios/govukwc-radio.component.js",
       "attributes": [

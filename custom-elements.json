@@ -526,6 +526,29 @@
       ]
     },
     {
+      "name": "govukwc-panel",
+      "path": "./components/govukwc-panel/govukwc-panel.component.js",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "title",
+          "attribute": "title",
+          "type": "string"
+        }
+      ],
+      "slots": [
+        {
+          "name": "Default",
+          "description": "Panel content area"
+        }
+      ]
+    },
+    {
       "name": "govukwc-radio",
       "path": "./components/govukwc-radios/govukwc-radio.component.js",
       "attributes": [

@@ -642,6 +642,98 @@
       ]
     },
     {
+      "name": "govukwc-select-option",
+      "path": "./components/govukwc-select/govukwc-select-option.component.js",
+      "attributes": [
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govukwc-select",
+      "path": "./components/govukwc-select/govukwc-select.component.js",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "type": "boolean"
+        }
+      ],
+      "properties": [
+        {
+          "name": "id",
+          "attribute": "id",
+          "type": "string"
+        },
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "hint",
+          "attribute": "hint",
+          "type": "string"
+        },
+        {
+          "name": "message",
+          "attribute": "message",
+          "type": "string"
+        },
+        {
+          "name": "pageLevel",
+          "attribute": "pageLevel",
+          "type": "boolean"
+        },
+        {
+          "name": "hintId",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
       "name": "govukwc-text-input",
       "path": "./components/govukwc-text-input/govukwc-text-input.component.js",
       "attributes": [

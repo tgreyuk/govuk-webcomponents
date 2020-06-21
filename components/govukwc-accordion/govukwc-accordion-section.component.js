@@ -1,15 +1,11 @@
 import { html, LitElement } from 'lit-element';
-import componentStyles from './govukwc-accordion.styles';
+
 export class AccordionSectionComponent extends LitElement {
   static get properties() {
     return {
       heading: { type: String },
       body: { type: String },
     };
-  }
-
-  static get styles() {
-    return [componentStyles];
   }
 
   constructor() {

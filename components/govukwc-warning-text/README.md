@@ -16,18 +16,11 @@ import 'govukwc-webcomponents/components/govukwc-warning-text.component.js';
 <govukwc-warning-text></govukwc-warning-text>
 ```
 
-
-
 ## &lt;govukwc-warning-text&gt;
-
 
 ### Properties
 
 | Property  |  Type     |
 |-----------|-----------|
 | `text` | `string` |
-
-
-
-
 

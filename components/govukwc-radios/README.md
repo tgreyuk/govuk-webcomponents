@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-radios.component.js';
 <govukwc-radios></govukwc-radios>
 ```
 
-
-
 ## &lt;govukwc-radios&gt;
-
 
 ### Properties
 
@@ -28,13 +25,7 @@ import 'govukwc-webcomponents/components/govukwc-radios.component.js';
 | `legend` | `string` |
 | `hint` | `string` |
 
-
-
-
-
-
 ## &lt;govukwc-radio&gt;
-
 
 ### Properties
 
@@ -44,8 +35,4 @@ import 'govukwc-webcomponents/components/govukwc-radios.component.js';
 | `name` | `string` |
 | `label` | `string` |
 | `value` | `string` |
-
-
-
-
 

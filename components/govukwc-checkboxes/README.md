@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes.component.js';
 <govukwc-checkboxes></govukwc-checkboxes>
 ```
 
-
-
 ## &lt;govukwc-checkboxes&gt;
-
 
 ### Properties
 
@@ -28,13 +25,7 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes.component.js';
 | `legend` | `string` |
 | `hint` | `string` |
 
-
-
-
-
-
 ## &lt;govukwc-checkbox&gt;
-
 
 ### Properties
 
@@ -44,8 +35,4 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes.component.js';
 | `name` | `string` |
 | `label` | `string` |
 | `value` | `string` |
-
-
-
-
 

@@ -8,6 +8,8 @@ const helpers = require('./helpers');
 const customElementJson = fs.readFileSync('./custom-elements.json');
 const customElements = JSON.parse(customElementJson.toString()).tags;
 
+const formatMarkdown = (md) => md.replace(/[\r\n]{3,}/g, '\n\n');
+
 const compileDocs = (file) => {
   const folder = path.dirname(file);
   const component = path.basename(path.dirname(file));
@@ -52,12 +54,12 @@ ${helpers.eventsTable(customElement.events)}
 `;
   })
   .join('\n')}`;
-  fs.outputFileSync(`${folder}/README.md`, md);
+  fs.outputFileSync(`${folder}/README.md`, formatMarkdown(md));
   fs.outputFileSync(
     `${folder}/${component}.docs.js`,
     `// this file is auto-generated into using https://www.npmjs.com/package/web-component-analyzer
 // source: ${file}
-export const readme = \`${md.replace(/`/g, '\\`')}\`;\n`,
+export const readme = \`${formatMarkdown(md).replace(/`/g, '\\`')}\`;\n`,
   );
   console.log(
     `[docs]: ${chalk.green('success')} ${component} README written to file`,
@@ -91,7 +93,7 @@ ${components
   )
   .join('\n')}
   `;
-  fs.writeFileSync('./README.md', md);
+  fs.writeFileSync('./README.md', formatMarkdown(md));
   console.log(
     `[docs]: ${chalk.green('success')} App README written to file updated`,
   );

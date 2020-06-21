@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-text-input.component.js';
 <govukwc-text-input></govukwc-text-input>
 ```
 
-
-
 ## &lt;govukwc-text-input&gt;
-
 
 ### Properties
 
@@ -32,8 +29,4 @@ import 'govukwc-webcomponents/components/govukwc-text-input.component.js';
 | `hint` | `string` |
 | `message` | `string` |
 | `pageLevel` | `boolean` |
-
-
-
-
 

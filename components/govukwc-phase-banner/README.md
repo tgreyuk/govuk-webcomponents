@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-phase-banner.component.js';
 <govukwc-phase-banner></govukwc-phase-banner>
 ```
 
-
-
 ## &lt;govukwc-phase-banner&gt;
-
 
 ### Properties
 
@@ -27,12 +24,9 @@ import 'govukwc-webcomponents/components/govukwc-phase-banner.component.js';
 |-----------|-----------|
 | `tag` | `string` |
 
-
 ### Slots
 
 | Name  |  Description     |
 |-----------|-----------|
 | `Default` | `Banner content area` |
-
-
 

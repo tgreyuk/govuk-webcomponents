@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-details.component.js';
 <govukwc-details></govukwc-details>
 ```
 
-
-
 ## &lt;govukwc-details&gt;
-
 
 ### Properties
 
@@ -27,12 +24,9 @@ import 'govukwc-webcomponents/components/govukwc-details.component.js';
 |-----------|-----------|
 | `summary` | `string` |
 
-
 ### Slots
 
 | Name  |  Description     |
 |-----------|-----------|
 | `Default` | `Details content area` |
-
-
 

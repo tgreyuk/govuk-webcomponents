@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-file-upload.component.js';
 <govukwc-file-upload></govukwc-file-upload>
 ```
 
-
-
 ## &lt;govukwc-file-upload&gt;
-
 
 ### Properties
 
@@ -28,8 +25,4 @@ import 'govukwc-webcomponents/components/govukwc-file-upload.component.js';
 | `id` | `string` |
 | `name` | `string` |
 | `label` | `string` |
-
-
-
-
 

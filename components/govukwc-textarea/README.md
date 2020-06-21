@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-textarea.component.js';
 <govukwc-textarea></govukwc-textarea>
 ```
 
-
-
 ## &lt;govukwc-textarea&gt;
-
 
 ### Properties
 
@@ -32,8 +29,4 @@ import 'govukwc-webcomponents/components/govukwc-textarea.component.js';
 | `hint` | `string` |
 | `message` | `string` |
 | `pageLevel` | `boolean` |
-
-
-
-
 

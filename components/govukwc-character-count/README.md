@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-character-count.component.js';
 <govukwc-character-count></govukwc-character-count>
 ```
 
-
-
 ## &lt;govukwc-character-count&gt;
-
 
 ### Properties
 
@@ -34,8 +31,4 @@ import 'govukwc-webcomponents/components/govukwc-character-count.component.js';
 | `hint` | `string` |
 | `message` | `string` |
 | `pageLevel` | `boolean` |
-
-
-
-
 

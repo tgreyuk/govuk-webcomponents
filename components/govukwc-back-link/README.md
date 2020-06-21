@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-back-link.component.js';
 <govukwc-back-link></govukwc-back-link>
 ```
 
-
-
 ## &lt;govukwc-back-link&gt;
-
 
 ### Properties
 
@@ -27,8 +24,4 @@ import 'govukwc-webcomponents/components/govukwc-back-link.component.js';
 |-----------|-----------|
 | `url` | `string` |
 | `label` | `string` |
-
-
-
-
 

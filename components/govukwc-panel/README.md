@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-panel.component.js';
 <govukwc-panel></govukwc-panel>
 ```
 
-
-
 ## &lt;govukwc-panel&gt;
-
 
 ### Properties
 
@@ -27,12 +24,9 @@ import 'govukwc-webcomponents/components/govukwc-panel.component.js';
 |-----------|-----------|
 | `title` | `string` |
 
-
 ### Slots
 
 | Name  |  Description     |
 |-----------|-----------|
 | `Default` | `Panel content area` |
-
-
 

@@ -16,18 +16,11 @@ import 'govukwc-webcomponents/components/govukwc-inset-text.component.js';
 <govukwc-inset-text></govukwc-inset-text>
 ```
 
-
-
 ## &lt;govukwc-inset-text&gt;
-
-
-
 
 ### Slots
 
 | Name  |  Description     |
 |-----------|-----------|
 | `Default` | `Inset text content area` |
-
-
 

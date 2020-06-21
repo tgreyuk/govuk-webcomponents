@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-fieldset.component.js';
 <govukwc-fieldset></govukwc-fieldset>
 ```
 
-
-
 ## &lt;govukwc-fieldset&gt;
-
 
 ### Properties
 
@@ -27,8 +24,4 @@ import 'govukwc-webcomponents/components/govukwc-fieldset.component.js';
 |-----------|-----------|
 | `legend` | `string` |
 | `hint` | `string` |
-
-
-
-
 

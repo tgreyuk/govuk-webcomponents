@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-breadcrumbs.component.js';
 <govukwc-breadcrumbs></govukwc-breadcrumbs>
 ```
 
-
-
 ## &lt;govukwc-breadcrumbs&gt;
-
 
 ### Properties
 
@@ -27,13 +24,7 @@ import 'govukwc-webcomponents/components/govukwc-breadcrumbs.component.js';
 |-----------|-----------|
 | `items` | `array` |
 
-
-
-
-
-
 ## &lt;govukwc-breadcrumbs-item&gt;
-
 
 ### Properties
 
@@ -41,8 +32,4 @@ import 'govukwc-webcomponents/components/govukwc-breadcrumbs.component.js';
 |-----------|-----------|
 | `url` | `string` |
 | `label` | `string` |
-
-
-
-
 

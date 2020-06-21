@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-select.component.js';
 <govukwc-select></govukwc-select>
 ```
 
-
-
 ## &lt;govukwc-select&gt;
-
 
 ### Properties
 
@@ -32,13 +29,7 @@ import 'govukwc-webcomponents/components/govukwc-select.component.js';
 | `message` | `string` |
 | `pageLevel` | `boolean` |
 
-
-
-
-
-
 ## &lt;govukwc-select-option&gt;
-
 
 ### Properties
 
@@ -46,8 +37,4 @@ import 'govukwc-webcomponents/components/govukwc-select.component.js';
 |-----------|-----------|
 | `label` | `string` |
 | `value` | `string` |
-
-
-
-
 

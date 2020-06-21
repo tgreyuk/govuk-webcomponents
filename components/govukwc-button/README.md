@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-button.component.js';
 <govukwc-button></govukwc-button>
 ```
 
-
-
 ## &lt;govukwc-button&gt;
-
 
 ### Properties
 
@@ -30,9 +27,6 @@ import 'govukwc-webcomponents/components/govukwc-button.component.js';
 | `type` | `"start"  \|"secondary"\|"warning"` |
 | `disabled` | `boolean` |
 | `preventDoubleClick` | `boolean` |
-
-
-
 
 ### Events
 

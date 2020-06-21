@@ -16,10 +16,7 @@ import 'govukwc-webcomponents/components/govukwc-accordion.component.js';
 <govukwc-accordion></govukwc-accordion>
 ```
 
-
-
 ## &lt;govukwc-accordion&gt;
-
 
 ### Properties
 
@@ -27,18 +24,13 @@ import 'govukwc-webcomponents/components/govukwc-accordion.component.js';
 |-----------|-----------|
 | `id` | `string` |
 
-
 ### Slots
 
 | Name  |  Description     |
 |-----------|-----------|
 | `Default` | `Accepts x number of govuk-accordion-section elements` |
 
-
-
-
 ## &lt;govukwc-accordion-section&gt;
-
 
 ### Properties
 
@@ -46,8 +38,4 @@ import 'govukwc-webcomponents/components/govukwc-accordion.component.js';
 |-----------|-----------|
 | `heading` | `string` |
 | `body` | `string` |
-
-
-
-
 

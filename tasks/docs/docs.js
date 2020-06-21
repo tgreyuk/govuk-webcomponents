@@ -64,7 +64,7 @@ export const readme = \`${md.replace(/`/g, '\\`')}\`;\n`,
   );
 };
 
-const compile = () => {
+const compileComponentReadMes = () => {
   const files = ['./**/*.component.js'];
   const filesWatcher = chokidar.watch(files, {
     persistent: false,
@@ -73,4 +73,29 @@ const compile = () => {
   filesWatcher.on('add', (file) => compileDocs(file));
 };
 
-compile();
+const updateAppReadMe = () => {
+  const componentsdir = fs.readdirSync('./components');
+  const components = componentsdir.filter((component) =>
+    component.startsWith('govukwc'),
+  );
+
+  const siteReadme = fs.readFileSync('./README.md', { encoding: 'utf8' });
+  const withoutComponents = siteReadme.split('## Components')[0];
+  const md = `${withoutComponents}
+
+## Components
+${components
+  .map(
+    (component) =>
+      `- [\<${component}>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/${component}/README.md)`,
+  )
+  .join('\n')}
+  `;
+  fs.writeFileSync('./README.md', md);
+  console.log(
+    `[docs]: ${chalk.green('success')} App README written to file updated`,
+  );
+};
+
+compileComponentReadMes();
+updateAppReadMe();

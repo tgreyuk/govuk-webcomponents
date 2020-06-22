@@ -4,10 +4,7 @@ import componentStyles from './govukwc-button.styles';
 import { Button } from './govukwc-button.script';
 
 /**
- * https://design-system.service.gov.uk/components/button/
- *
  * @fires clicked - Fires when button has been clicked
- * @returns some stuff
  */
 
 export class ButtonComponent extends LitElement {

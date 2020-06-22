@@ -7,6 +7,7 @@ import { addons } from '@storybook/addons';
 import { withHTML } from '@whitespace/storybook-addon-html/html';
 import { addReadme } from 'storybook-readme/html';
 import { logEvent } from 'storybook-events-logger';
+import { storyEvents } from './utils';
 
 addDecorator(withHTML);
 addDecorator(addReadme);
@@ -30,10 +31,5 @@ if (module.hot) {
 // Log Custom Events
 const channel = addons.getChannel();
 channel.addListener('storyRendered', (story) => {
-  if (story.startsWith('button')) {
-    const button = document.querySelector('govuk-button');
-    button.addEventListener('clicked', (e) => {
-      logEvent(e);
-    });
-  }
+  storyEvents(story, logEvent);
 });

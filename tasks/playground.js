@@ -65,6 +65,7 @@ const chalk = require('chalk');
     <script type="module">
       import { html, render } from 'lit-html';
       import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
+      import { storyEvents } from './.storybook/utils.js';
       ${components
         .map(
           (component) =>
@@ -95,6 +96,14 @@ const chalk = require('chalk');
         \`;
       };
       render(template(), document.querySelector('#demo'));
+      const components = Array.from(document.querySelectorAll('h2')).map(
+        (component) => component.getAttribute('id').split('govukwc-')[1],
+      );
+      components.forEach((component) => {
+        storyEvents(component, (e) => {
+          console.log(e);
+        });
+      });
     </script>
   </body>
 </html>`;

@@ -122,7 +122,6 @@
     {
       "name": "govukwc-button",
       "path": "./components/govukwc-button/govukwc-button.component.js",
-      "description": "https://design-system.service.gov.uk/components/button/",
       "attributes": [
         {
           "name": "label",
@@ -730,6 +729,87 @@
         {
           "name": "hintId",
           "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "govukwc-skip-link",
+      "path": "./components/govukwc-skip-link/govukwc-skip-link.component.js",
+      "attributes": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"Skip to main content\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "contentId",
+          "type": "string",
+          "default": "\"content\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"Skip to main content\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "Default",
+          "description": "Slip link content area"
+        }
+      ]
+    },
+    {
+      "name": "govukwc-summary-list-row",
+      "path": "./components/govukwc-summary-list/govukwc-summary-list-row.component.js",
+      "attributes": [
+        {
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "name": "action",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "key",
+          "attribute": "key",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string"
+        },
+        {
+          "name": "action",
+          "attribute": "action",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govukwc-summary-list",
+      "path": "./components/govukwc-summary-list/govukwc-summary-list.component.js",
+      "events": [
+        {
+          "name": "clicked",
+          "description": "Fires when action has been clicked"
+        }
+      ],
+      "slots": [
+        {
+          "name": "Default",
+          "description": "x number of summary-list-row components"
         }
       ]
     },

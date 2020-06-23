@@ -15,6 +15,7 @@ export default {
 const defaultColumns = [
   {
     header: 'Date',
+    scopedRows: true,
     data: ['First 6 weeks', 'Next 33 weeks', 'Total estimated pay'],
   },
   {
@@ -26,6 +27,7 @@ const defaultColumns = [
 const numberColumns = [
   {
     header: 'Month you apply',
+    scopedRows: true,
     data: ['January', 'February', 'March'],
   },
   {

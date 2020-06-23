@@ -846,6 +846,47 @@
       ]
     },
     {
+      "name": "govukwc-tabs-panel",
+      "path": "./components/govukwc-tabs/govukwc-tabs-panel.component.js",
+      "attributes": [
+        {
+          "name": "heading",
+          "type": "string"
+        },
+        {
+          "name": "id"
+        }
+      ],
+      "properties": [
+        {
+          "name": "heading",
+          "attribute": "heading",
+          "type": "string"
+        },
+        {
+          "name": "id",
+          "attribute": "id"
+        }
+      ]
+    },
+    {
+      "name": "govukwc-tabs",
+      "path": "./components/govukwc-tabs/govukwc-tabs.component.js",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "title",
+          "attribute": "title",
+          "type": "string"
+        }
+      ]
+    },
+    {
       "name": "govukwc-text-input",
       "path": "./components/govukwc-text-input/govukwc-text-input.component.js",
       "attributes": [

@@ -21,13 +21,20 @@ export class TableComponent extends LitElement {
   connectedCallback() {
     super.connectedCallback();
     this.headers = this.columns.map((col) => {
-      const item = { value: col.header, numeric: !!col.numeric };
+      const item = {
+        value: col.header,
+        numeric: !!col.numeric,
+      };
       return item;
     });
     const rows = [];
     this.columns.forEach((col) => {
       col.data.forEach((cell, i) => {
-        const item = { value: cell, numeric: !!col.numeric };
+        const item = {
+          value: cell,
+          numeric: !!col.numeric,
+          scoped: col.scopedRows,
+        };
         if (rows[i]) {
           rows[i].push(item);
         } else {
@@ -64,7 +71,8 @@ export class TableComponent extends LitElement {
                 'govuk-table__cell': true,
                 'govuk-table__cell--numeric': cell.numeric,
               };
-              return index === 0
+
+              return cell.scoped
                 ? html`<th scope="row" class="govuk-table__header">
                     ${cell.value}
                   </th>`

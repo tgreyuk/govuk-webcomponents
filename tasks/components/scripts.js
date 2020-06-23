@@ -68,3 +68,8 @@ compileScript('accordion', {
 });
 compileScript('button', { dropRight: 5, dropLeft: 661 });
 compileScript('character-count', { dropRight: 5, dropLeft: 1016 });
+compileScript('tabs', {
+  dropRight: 5,
+  dropLeft: 1070,
+  functions: ['nodeListForEach'],
+});

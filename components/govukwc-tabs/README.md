@@ -22,6 +22,7 @@ import 'govukwc-webcomponents/components/govukwc-tabs.component.js';
 
 | Property  |  Type     |
 |-----------|-----------|
+| `id` | `string` |
 | `title` | `string` |
 
 ## &lt;govukwc-tabs-panel&gt;

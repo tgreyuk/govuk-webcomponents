@@ -874,14 +874,49 @@
       "path": "./components/govukwc-tabs/govukwc-tabs.component.js",
       "attributes": [
         {
+          "name": "id",
+          "type": "string"
+        },
+        {
           "name": "title",
           "type": "string"
         }
       ],
       "properties": [
         {
+          "name": "id",
+          "attribute": "id",
+          "type": "string"
+        },
+        {
           "name": "title",
           "attribute": "title",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "govukwc-tag",
+      "path": "./components/govukwc-tag/govukwc-tag.component.js",
+      "attributes": [
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "colour",
+          "type": "string"
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string"
+        },
+        {
+          "name": "colour",
+          "attribute": "colour",
           "type": "string"
         }
       ]

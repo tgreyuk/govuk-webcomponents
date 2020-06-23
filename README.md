@@ -24,6 +24,7 @@ Please note this package is under beta - more detailed documentation and compone
 - [<govukwc-select>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-select/README.md)
 - [<govukwc-skip-link>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-skip-link/README.md)
 - [<govukwc-summary-list>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-summary-list/README.md)
+- [<govukwc-table>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-table/README.md)
 - [<govukwc-text-input>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-text-input/README.md)
 - [<govukwc-textarea>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-textarea/README.md)
 - [<govukwc-warning-text>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-warning-text/README.md)

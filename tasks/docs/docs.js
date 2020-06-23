@@ -43,6 +43,9 @@ ${components
     const customElement = customElements.find(
       (element) => element.name === name,
     );
+    if (!customElement) {
+      return;
+    }
     return `## &lt;${name}&gt;
 
 ${helpers.propertiesTable(customElement.attributes)}

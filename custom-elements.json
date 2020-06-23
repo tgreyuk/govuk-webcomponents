@@ -795,6 +795,12 @@
           "attribute": "action",
           "type": "string"
         }
+      ],
+      "slots": [
+        {
+          "name": "Default",
+          "description": "summary value"
+        }
       ]
     },
     {
@@ -810,6 +816,32 @@
         {
           "name": "Default",
           "description": "x number of summary-list-row components"
+        }
+      ]
+    },
+    {
+      "name": "govukwc-table",
+      "path": "./components/govukwc-table/govukwc-table.component.js",
+      "attributes": [
+        {
+          "name": "caption",
+          "type": "string"
+        },
+        {
+          "name": "columns",
+          "type": "array"
+        }
+      ],
+      "properties": [
+        {
+          "name": "caption",
+          "attribute": "caption",
+          "type": "string"
+        },
+        {
+          "name": "columns",
+          "attribute": "columns",
+          "type": "array"
         }
       ]
     },

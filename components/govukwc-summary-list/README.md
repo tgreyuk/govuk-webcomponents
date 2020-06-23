@@ -40,3 +40,9 @@ import 'govukwc-webcomponents/components/govukwc-summary-list.component.js';
 | `value` | `string` |
 | `action` | `string` |
 
+### Slots
+
+| Name  |  Description     |
+|-----------|-----------|
+| `Default` | `summary value` |
+

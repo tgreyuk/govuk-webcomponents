@@ -23,6 +23,7 @@
 # site
 /index.html
 storybook-static
+custom-elements.json
 *.docs.js
 *.script.js
 *.styles.js

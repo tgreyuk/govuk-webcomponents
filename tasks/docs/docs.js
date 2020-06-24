@@ -92,7 +92,7 @@ const updateAppReadMe = () => {
 ${components
   .map(
     (component) =>
-      `- [\<${component}>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/${component}/README.md)`,
+      `- [\\<${component}>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/${component}/README.md)`,
   )
   .join('\n')}
   `;

@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run build && npm run playground && concurrently --kill-others \"npm run watch\" \"npm run es-dev-server\"",
+    "prepublishOnly": "npm run build",
     "es-dev-server": "es-dev-server --config es-dev-server.js",
     "playground": "rm -rf ./playground && node ./tasks/playground.js",
     "build": "npm-run-all build:*",

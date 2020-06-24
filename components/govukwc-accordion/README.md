@@ -39,3 +39,9 @@ import 'govukwc-webcomponents/components/govukwc-accordion.component.js';
 | `heading` | `string` |
 | `body` | `string` |
 
+### Slots
+
+| Name  |  Description     |
+|-----------|-----------|
+| `Default` | `Accordion body content` |
+

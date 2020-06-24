@@ -1,5 +1,8 @@
 import { html, LitElement } from 'lit-element';
 
+/**
+ * @slot Default - Accordion body content
+ */
 export class AccordionSectionComponent extends LitElement {
   static get properties() {
     return {
@@ -34,7 +37,7 @@ export class AccordionSectionComponent extends LitElement {
         aria-labelledby=${headingId}
       >
         <p class="govuk-body">
-          ${this.body}
+          <slot></slot>
         </p>
       </div>
     </div>`;

@@ -15,6 +15,7 @@ Please note this package is under beta - more detailed documentation and compone
 - [<govukwc-checkboxes>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-checkboxes/README.md)
 - [<govukwc-date-input>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-date-input/README.md)
 - [<govukwc-details>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-details/README.md)
+- [<govukwc-error-summary>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-error-summary/README.md)
 - [<govukwc-fieldset>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-fieldset/README.md)
 - [<govukwc-file-upload>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-file-upload/README.md)
 - [<govukwc-inset-text>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-inset-text/README.md)

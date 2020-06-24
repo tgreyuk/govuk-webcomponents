@@ -26,8 +26,10 @@ import 'govukwc-webcomponents/components/govukwc-select.component.js';
 | `name` | `string` |
 | `label` | `string` |
 | `hint` | `string` |
+| `error` | `string` |
 | `message` | `string` |
 | `pageLevel` | `boolean` |
+| `invalid` | `boolean` |
 
 ## &lt;govukwc-select-option&gt;
 

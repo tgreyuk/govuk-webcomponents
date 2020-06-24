@@ -27,6 +27,8 @@ import 'govukwc-webcomponents/components/govukwc-textarea.component.js';
 | `name` | `string` |
 | `label` | `string` |
 | `hint` | `string` |
+| `error` | `string` |
 | `message` | `string` |
 | `pageLevel` | `boolean` |
+| `invalid` | `boolean` |
 

@@ -33,7 +33,7 @@ const compileScript = (component, options) => {
   const file = `${basedir}/${component}/${component}.js`;
   const script = fs.readFileSync(file);
   const scriptToLines = splitlines(script.toString());
-  let parsedScript = dropRight(scriptToLines, options.dropRight);
+  let parsedScript = dropRight(scriptToLines, 5);
   parsedScript = drop(parsedScript, options.dropLeft);
   const outfile = path.resolve(
     __dirname,
@@ -62,14 +62,13 @@ ${parsedScript.join('').replace('function', 'export function')}\n`,
 };
 
 compileScript('accordion', {
-  dropRight: 5,
   dropLeft: 760,
   functions: ['nodeListForEach'],
 });
-compileScript('button', { dropRight: 5, dropLeft: 661 });
-compileScript('character-count', { dropRight: 5, dropLeft: 1016 });
+compileScript('button', { dropLeft: 661 });
+compileScript('character-count', { dropLeft: 1016 });
+compileScript('error-summary', { dropLeft: 708 });
 compileScript('tabs', {
-  dropRight: 5,
   dropLeft: 1070,
   functions: ['nodeListForEach'],
 });

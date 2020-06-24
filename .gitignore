@@ -21,7 +21,7 @@
 /out-tsc/
 
 # site
-/index.html
+playground
 storybook-static
 custom-elements.json
 *.docs.js

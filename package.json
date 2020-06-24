@@ -9,7 +9,7 @@
   "scripts": {
     "start": "npm run build && npm run playground && concurrently --kill-others \"npm run watch\" \"npm run es-dev-server\"",
     "es-dev-server": "es-dev-server --config es-dev-server.js",
-    "playground": "node ./tasks/playground.js",
+    "playground": "rm -rf ./playground && node ./tasks/playground.js",
     "build": "npm-run-all build:*",
     "build:styles": "node ./tasks/components/styles.js",
     "build:scripts": "node ./tasks/components/scripts.js",

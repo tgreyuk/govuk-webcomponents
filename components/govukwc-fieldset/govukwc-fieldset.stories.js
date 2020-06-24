@@ -1,6 +1,7 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-fieldset.docs';
 import './govukwc-fieldset.component';
+import '../govukwc-text-input/govukwc-text-input.component';
 
 export default {
   title: 'Fieldset',

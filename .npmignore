@@ -1,7 +1,9 @@
 tasks
 karma.conf.js
-index.html
+playground
+storybook-static
 es-dev-server.js
+custom-elements.json
 components/**/*.scss
 components/**/*.stories.js
 components/**/*.docs.js

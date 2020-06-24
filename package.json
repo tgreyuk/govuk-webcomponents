@@ -30,8 +30,7 @@
   },
   "dependencies": {
     "lit-element": "^2.2.1",
-    "lit-html": "^1.2.1",
-    "uid": "^1.0.0"
+    "lit-html": "^1.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",

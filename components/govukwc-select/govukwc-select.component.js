@@ -19,6 +19,7 @@ export class SelectComponent extends FormGroup {
 
   firstUpdated() {
     const slot = this.shadowRoot.querySelector('slot');
+    replaceSlot(slot);
     const select = document.createElement('select');
     select.setAttribute('class', 'govuk-select');
     select.setAttribute('id', this.id);

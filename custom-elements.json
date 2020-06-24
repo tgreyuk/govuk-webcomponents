@@ -820,6 +820,36 @@
       ]
     },
     {
+      "name": "govukwc-table-cell",
+      "path": "./components/govukwc-table/govukwc-table-cell.component.js",
+      "attributes": [
+        {
+          "name": "scope",
+          "type": "string"
+        },
+        {
+          "name": "numeric",
+          "type": "boolean"
+        }
+      ],
+      "properties": [
+        {
+          "name": "scope",
+          "attribute": "scope",
+          "type": "string"
+        },
+        {
+          "name": "numeric",
+          "attribute": "numeric",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "govukwc-table-row",
+      "path": "./components/govukwc-table/govukwc-table-row.component.js"
+    },
+    {
       "name": "govukwc-table",
       "path": "./components/govukwc-table/govukwc-table.component.js",
       "attributes": [

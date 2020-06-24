@@ -16,27 +16,99 @@ export default {
 export const Default = () =>
   html`<govukwc-tabs title="Contents">
     <govukwc-tabs-panel heading="Past day" id="past-day">
-      <govukwc-table
-        caption="Dates and amounts"
-        columns='[{"header":"Case manager","data":["David Francis","Paul Farmer","Rita Patel"]},{"header":"Cases opened","data":["3","2","1"]},{"header":"Cases closed","data":["0","0","0"]}]'
-      ></govukwc-table>
+      <govukwc-table>
+        <govukwc-table-row slot="head">
+          <govukwc-table-cell scope="col">Case manager</govukwc-table-cell>
+          <govukwc-table-cell scope="col">Cases opened</govukwc-table-cell>
+          <govukwc-table-cell scope="col">Cases closed</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>David Francis</govukwc-table-cell>
+          <govukwc-table-cell>3</govukwc-table-cell>
+          <govukwc-table-cell>0</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>Paul Farmer</govukwc-table-cell>
+          <govukwc-table-cell>1</govukwc-table-cell>
+          <govukwc-table-cell>0</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>Rita Patel</govukwc-table-cell>
+          <govukwc-table-cell>2</govukwc-table-cell>
+          <govukwc-table-cell>0</govukwc-table-cell>
+        </govukwc-table-row>
+      </govukwc-table>
     </govukwc-tabs-panel>
     <govukwc-tabs-panel heading="Past week" id="past-week">
-      <govukwc-table
-        caption="Dates and amounts"
-        columns='[{"header":"Case manager","data":["David Francis","Paul Farmer","Rita Patel"]},{"header":"Cases opened","data":["24","16","24"]},{"header":"Cases closed","data":["18","20","27"]}]'
-      ></govukwc-table>
+      <govukwc-table>
+        <govukwc-table-row slot="head">
+          <govukwc-table-cell scope="col">Case manager</govukwc-table-cell>
+          <govukwc-table-cell scope="col">Cases opened</govukwc-table-cell>
+          <govukwc-table-cell scope="col">Cases closed</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>David Francis</govukwc-table-cell>
+          <govukwc-table-cell>24</govukwc-table-cell>
+          <govukwc-table-cell>18</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>Paul Farmer</govukwc-table-cell>
+          <govukwc-table-cell>16</govukwc-table-cell>
+          <govukwc-table-cell>20</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>Rita Patel</govukwc-table-cell>
+          <govukwc-table-cell>24</govukwc-table-cell>
+          <govukwc-table-cell>27</govukwc-table-cell>
+        </govukwc-table-row>
+      </govukwc-table>
     </govukwc-tabs-panel>
     <govukwc-tabs-panel heading="Past month" id="past-month">
-      <govukwc-table
-        caption="Dates and amounts"
-        columns='[{"header":"Case manager","data":["David Francis","Paul Farmer","Rita Patel"]},{"header":"Cases opened","data":["98","122","126"]},{"header":"Cases closed","data":["95","131","142"]}]'
-      ></govukwc-table>
+      <govukwc-table>
+        <govukwc-table-row slot="head">
+          <govukwc-table-cell scope="col">Case manager</govukwc-table-cell>
+          <govukwc-table-cell scope="col">Cases opened</govukwc-table-cell>
+          <govukwc-table-cell scope="col">Cases closed</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>David Francis</govukwc-table-cell>
+          <govukwc-table-cell>98</govukwc-table-cell>
+          <govukwc-table-cell>95</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>Paul Farmer</govukwc-table-cell>
+          <govukwc-table-cell>1222</govukwc-table-cell>
+          <govukwc-table-cell>131</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>Rita Patel</govukwc-table-cell>
+          <govukwc-table-cell>126</govukwc-table-cell>
+          <govukwc-table-cell>142</govukwc-table-cell>
+        </govukwc-table-row>
+      </govukwc-table>
     </govukwc-tabs-panel>
     <govukwc-tabs-panel heading="Past year" id="past-year">
-      <govukwc-table
-        caption="Dates and amounts"
-        columns='[{"header":"Case manager","data":["David Francis","Paul Farmer","Rita Patel"]},{"header":"Cases opened","data":["1380","1129","1539"]},{"header":"Cases closed","data":["1472","1083","1265"]}]'
-      ></govukwc-table>
+      <govukwc-table>
+        <govukwc-table-row slot="head">
+          <govukwc-table-cell scope="col">Case manager</govukwc-table-cell>
+          <govukwc-table-cell scope="col">Cases opened</govukwc-table-cell>
+          <govukwc-table-cell scope="col">Cases closed</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>David Francis</govukwc-table-cell>
+          <govukwc-table-cell>1380</govukwc-table-cell>
+          <govukwc-table-cell>1472</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>Paul Farmer</govukwc-table-cell>
+          <govukwc-table-cell>1129</govukwc-table-cell>
+          <govukwc-table-cell>1083</govukwc-table-cell>
+        </govukwc-table-row>
+        <govukwc-table-row>
+          <govukwc-table-cell>Rita Patel</govukwc-table-cell>
+          <govukwc-table-cell>1539</govukwc-table-cell>
+          <govukwc-table-cell>1265</govukwc-table-cell>
+        </govukwc-table-row>
+      </govukwc-table>
     </govukwc-tabs-panel>
   </govukwc-tabs>`.getHTML();

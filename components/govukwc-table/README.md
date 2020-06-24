@@ -25,3 +25,14 @@ import 'govukwc-webcomponents/components/govukwc-table.component.js';
 | `caption` | `string` |
 | `columns` | `array` |
 
+## &lt;govukwc-table-row&gt;
+
+## &lt;govukwc-table-cell&gt;
+
+### Properties
+
+| Property  |  Type     |
+|-----------|-----------|
+| `scope` | `string` |
+| `numeric` | `boolean` |
+

@@ -45,7 +45,7 @@ const compileScript = (component, options) => {
   );
   fs.outputFileSync(
     outfile,
-    `// this file is auto-generated into required format
+    `// this file is auto-generated to be esm compatible
 // source: node_modules/govuk-frontend/govuk/${file}
 ${
   options.functions

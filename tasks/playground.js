@@ -28,17 +28,12 @@ const chalk = require('chalk');
     <style>
     body {
       padding: 30px 60px;
+      font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     h1.playground-title {
       text-align: center;
       font-weight: 500;
       margin-bottom:40px;
-    }
-    h2.playground-subtitle {
-      background: #eee;
-      padding: 10px;
-      margin: 30px 0 20px 0;
-      font-weight: 500;
     }
     ul.playground-menu {
       margin:0;
@@ -95,19 +90,10 @@ const chalk = require('chalk');
     <meta charset="utf-8" />
     <style>
     body {
+      font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
       padding: 30px 60px;
     }
-    h1.playground-title {
-      text-align: center;
-      font-weight: 500;
-      margin-bottom:40px;
-    }
-    h2.playground-subtitle {
-      background: #eee;
-      padding: 10px;
-      margin: 30px 0 20px 0;
-      font-weight: 500;
-    }
+
     .story {
       margin-bottom:10px;
     }
@@ -124,10 +110,13 @@ const chalk = require('chalk');
       import { html, render } from 'lit-html';
       import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
       import { storyEvents } from '../.storybook/utils.js';
-      import * as ${component.name} from '${component.path.replace(
-    './components',
-    '../components',
-  )}';
+      import * as ${component.name} from '../components/${component.el}/${
+    component.el
+  }.stories.js';
+      import { readme } from '../components/${component.el}/${
+    component.el
+  }.docs.js';
+      import marked from 'marked/lib/marked.esm';
 
       const componentTemplate = (component) => html\`
       \${Object.entries(component)
@@ -135,9 +124,11 @@ const chalk = require('chalk');
           .map(([a, b]) => unsafeHTML(\`<div class="story">\${b()}</div>\`))} \`;
       const template = () => {
         return html\`
-          <h1 class="playground-title">${startCase(component.name)}</h1>
-          \${componentTemplate(${component.name})}\`
-      };
+          <h1>${startCase(component.name)}</h1>
+          \${componentTemplate(${
+            component.name
+          })}\${unsafeHTML(marked(readme))}\`
+        };
       render(template(), document.querySelector('#demo'));
 
       storyEvents('${component.name}', (e) => {

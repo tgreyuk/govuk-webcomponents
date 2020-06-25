@@ -17,23 +17,18 @@ const compileDocs = (file) => {
     .readdirSync(folder)
     .filter((file) => file.endsWith('.component.js'));
   const originalName = file.split('govukwc-')[1];
-  const md = `# ${startCase(originalName)}
+  const md = `# gov-uk-${originalName.replace('/', '')}
 
-See: https://design-system.service.gov.uk/components/${originalName}
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/${originalName})
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/${originalName})
 
 ## Usage
-
-**Js**
 
 \`\`\`javascript
 import 'govukwc-webcomponents/components/${component}.component.js';
 \`\`\`
 
-**Markup**
-
-\`\`\`markup
-<${component}></${component}>
-\`\`\`\n\n
+## API
 
 ${components
   .reverse()
@@ -46,7 +41,7 @@ ${components
     if (!customElement) {
       return;
     }
-    return `## &lt;${name}&gt;
+    return `## \`<${name}>\`
 
 ${helpers.propertiesTable(customElement.attributes)}
 
@@ -76,6 +71,7 @@ const compileComponentReadMes = () => {
     ignored: ['node_modules/**/*'],
   });
   filesWatcher.on('add', (file) => compileDocs(file));
+  filesWatcher.on('change', (file) => compileDocs(file));
 };
 
 const updateAppReadMe = () => {

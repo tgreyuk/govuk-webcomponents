@@ -2,14 +2,23 @@ const propertiesTable = (properties) => {
   if (!properties) {
     return '';
   }
+  const props = ['name', 'type', 'default', 'description'];
   return `
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-${properties
-  .map((properties) => `| \`${properties.name}\` | \`${properties.type}\` |`)
-  .join('\n')}`;
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+${
+  properties
+    .map(
+      (properties) =>
+        '| ' +
+        props
+          .map((prop) => (properties[prop] ? properties[prop] : '""'))
+          .join(`|`),
+    )
+    .join('\n') + '| '
+}`;
 };
 
 const slotsTable = (slots) => {

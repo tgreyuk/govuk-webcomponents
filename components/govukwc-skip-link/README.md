@@ -1,28 +1,23 @@
-# Skip Link
+# gov-uk-skip-link
 
-See: https://design-system.service.gov.uk/components/skip-link/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/skip-link/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/skip-link/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-skip-link.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-skip-link></govukwc-skip-link>
-```
-
-## &lt;govukwc-skip-link&gt;
+## `<govukwc-skip-link>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `label` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| label|string|"Skip to main content"|""| 
 
 ### Slots
 

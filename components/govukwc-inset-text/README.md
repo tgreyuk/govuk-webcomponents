@@ -1,22 +1,17 @@
-# Inset Text
+# gov-uk-inset-text
 
-See: https://design-system.service.gov.uk/components/inset-text/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/inset-text/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/inset-text/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-inset-text.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-inset-text></govukwc-inset-text>
-```
-
-## &lt;govukwc-inset-text&gt;
+## `<govukwc-inset-text>`
 
 ### Slots
 

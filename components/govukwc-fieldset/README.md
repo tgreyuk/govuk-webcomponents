@@ -1,27 +1,22 @@
-# Fieldset
+# gov-uk-fieldset
 
-See: https://design-system.service.gov.uk/components/fieldset/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/fieldset/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/fieldset/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-fieldset.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-fieldset></govukwc-fieldset>
-```
-
-## &lt;govukwc-fieldset&gt;
+## `<govukwc-fieldset>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `legend` | `string` |
-| `hint` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| legend|string|""|""
+| hint|string|""|""| 
 

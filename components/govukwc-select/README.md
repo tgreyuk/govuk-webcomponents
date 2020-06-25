@@ -1,42 +1,37 @@
-# Select
+# gov-uk-select
 
-See: https://design-system.service.gov.uk/components/select/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/select/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/select/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-select.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-select></govukwc-select>
-```
-
-## &lt;govukwc-select&gt;
+## `<govukwc-select>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `id` | `string` |
-| `name` | `string` |
-| `label` | `string` |
-| `hint` | `string` |
-| `error` | `string` |
-| `message` | `string` |
-| `pageLevel` | `boolean` |
-| `invalid` | `boolean` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| id|string|""|""
+| name|string|""|""
+| label|string|""|""
+| hint|string|""|""
+| error|string|""|""
+| message|string|""|""
+| pageLevel|boolean|""|""
+| invalid|boolean|""|""| 
 
-## &lt;govukwc-select-option&gt;
+## `<govukwc-select-option>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `label` | `string` |
-| `value` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| label|string|""|""
+| value|string|""|""| 
 

@@ -1,27 +1,22 @@
-# Back Link
+# gov-uk-back-link
 
-See: https://design-system.service.gov.uk/components/back-link/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/back-link/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/back-link/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-back-link.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-back-link></govukwc-back-link>
-```
-
-## &lt;govukwc-back-link&gt;
+## `<govukwc-back-link>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `url` | `string` |
-| `label` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| url|string|""|""
+| label|string|""|""| 
 

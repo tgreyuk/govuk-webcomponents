@@ -1,28 +1,23 @@
-# Phase Banner
+# gov-uk-phase-banner
 
-See: https://design-system.service.gov.uk/components/phase-banner/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/phase-banner/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/phase-banner/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-phase-banner.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-phase-banner></govukwc-phase-banner>
-```
-
-## &lt;govukwc-phase-banner&gt;
+## `<govukwc-phase-banner>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `tag` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| tag|string|""|""| 
 
 ### Slots
 

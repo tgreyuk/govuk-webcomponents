@@ -1,34 +1,29 @@
-# Text Input
+# gov-uk-text-input
 
-See: https://design-system.service.gov.uk/components/text-input/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/text-input/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/text-input/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-text-input.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-text-input></govukwc-text-input>
-```
-
-## &lt;govukwc-text-input&gt;
+## `<govukwc-text-input>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `width` | `"20"  \|"10"\|"5"\|"4"\|"3"\|"2"\|"full"\|"three-quarters"\|"two-thirds"\|"one-half"\|"one-third"\|"one-quarter"` |
-| `id` | `string` |
-| `name` | `string` |
-| `label` | `string` |
-| `hint` | `string` |
-| `error` | `string` |
-| `message` | `string` |
-| `pageLevel` | `boolean` |
-| `invalid` | `boolean` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| width|"20"  \|"10"\|"5"\|"4"\|"3"\|"2"\|"full"\|"three-quarters"\|"two-thirds"\|"one-half"\|"one-third"\|"one-quarter"|"20"|""
+| id|string|""|""
+| name|string|""|""
+| label|string|""|""
+| hint|string|""|""
+| error|string|""|""
+| message|string|""|""
+| pageLevel|boolean|""|""
+| invalid|boolean|""|""| 
 

@@ -1,28 +1,23 @@
-# Panel
+# gov-uk-panel
 
-See: https://design-system.service.gov.uk/components/panel/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/panel/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/panel/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-panel.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-panel></govukwc-panel>
-```
-
-## &lt;govukwc-panel&gt;
+## `<govukwc-panel>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `title` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| title|string|""|""| 
 
 ### Slots
 

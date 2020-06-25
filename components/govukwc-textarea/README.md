@@ -1,34 +1,29 @@
-# Textarea
+# gov-uk-textarea
 
-See: https://design-system.service.gov.uk/components/textarea/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/textarea/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/textarea/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-textarea.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-textarea></govukwc-textarea>
-```
-
-## &lt;govukwc-textarea&gt;
+## `<govukwc-textarea>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `rows` | `number` |
-| `id` | `string` |
-| `name` | `string` |
-| `label` | `string` |
-| `hint` | `string` |
-| `error` | `string` |
-| `message` | `string` |
-| `pageLevel` | `boolean` |
-| `invalid` | `boolean` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| rows|number|5|""
+| id|string|""|""
+| name|string|""|""
+| label|string|""|""
+| hint|string|""|""
+| error|string|""|""
+| message|string|""|""
+| pageLevel|boolean|""|""
+| invalid|boolean|""|""| 
 

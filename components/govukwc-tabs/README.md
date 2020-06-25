@@ -1,36 +1,31 @@
-# Tabs
+# gov-uk-tabs
 
-See: https://design-system.service.gov.uk/components/tabs/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/tabs/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/tabs/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-tabs.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-tabs></govukwc-tabs>
-```
-
-## &lt;govukwc-tabs&gt;
+## `<govukwc-tabs>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `id` | `string` |
-| `title` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| id|string|""|""
+| title|string|""|""| 
 
-## &lt;govukwc-tabs-panel&gt;
+## `<govukwc-tabs-panel>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `heading` | `string` |
-| `id` | `undefined` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| heading|string|""|""
+| id|""|""|""| 
 

@@ -1,38 +1,33 @@
-# Table
+# gov-uk-table
 
-See: https://design-system.service.gov.uk/components/table/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/table/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/table/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-table.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-table></govukwc-table>
-```
-
-## &lt;govukwc-table&gt;
+## `<govukwc-table>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `caption` | `string` |
-| `columns` | `array` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| caption|string|""|""
+| columns|array|""|""| 
 
-## &lt;govukwc-table-row&gt;
+## `<govukwc-table-row>`
 
-## &lt;govukwc-table-cell&gt;
+## `<govukwc-table-cell>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `scope` | `string` |
-| `numeric` | `boolean` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| scope|string|""|""
+| numeric|boolean|""|""| 
 

@@ -1,32 +1,27 @@
-# Button
+# gov-uk-button
 
-See: https://design-system.service.gov.uk/components/button/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/button/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/button/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-button.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-button></govukwc-button>
-```
-
-## &lt;govukwc-button&gt;
+## `<govukwc-button>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `label` | `string` |
-| `url` | `string` |
-| `type` | `"start"  \|"secondary"\|"warning"` |
-| `disabled` | `boolean` |
-| `preventDoubleClick` | `boolean` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| label|string|""|""
+| url|string|""|If url is set the ement is rendered as an anchor element
+| type|"start"  \|"secondary"\|"warning"|""|""
+| disabled|boolean|""|""
+| preventDoubleClick|boolean|""|""| 
 
 ### Events
 

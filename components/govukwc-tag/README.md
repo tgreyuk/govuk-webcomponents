@@ -1,27 +1,22 @@
-# Tag
+# gov-uk-tag
 
-See: https://design-system.service.gov.uk/components/tag/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/tag/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/tag/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-tag.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-tag></govukwc-tag>
-```
-
-## &lt;govukwc-tag&gt;
+## `<govukwc-tag>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `label` | `string` |
-| `colour` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| label|string|""|""
+| colour|string|""|""| 
 

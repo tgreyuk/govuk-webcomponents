@@ -1,47 +1,41 @@
-# Accordion
+# gov-uk-accordion
 
-See: https://design-system.service.gov.uk/components/accordion/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/accordion/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/accordion/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-accordion.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-accordion></govukwc-accordion>
-```
-
-## &lt;govukwc-accordion&gt;
+## `<govukwc-accordion>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `id` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| id|string|""|A unique id to describe the accordion| 
 
 ### Slots
 
 | Name  |  Description     |
 |-----------|-----------|
-| `Default` | `Accepts x number of govuk-accordion-section elements` |
+| `default` | `Accepts x number of <govuk-accordion-section> elements` |
 
-## &lt;govukwc-accordion-section&gt;
+## `<govukwc-accordion-section>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `heading` | `string` |
-| `body` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| heading|string|""|Heading / toggle text| 
 
 ### Slots
 
 | Name  |  Description     |
 |-----------|-----------|
-| `Default` | `Accordion body content` |
+| `default` | `Accordion body content` |
 

@@ -1,28 +1,23 @@
-# Details
+# gov-uk-details
 
-See: https://design-system.service.gov.uk/components/details/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/details/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/details/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-details.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-details></govukwc-details>
-```
-
-## &lt;govukwc-details&gt;
+## `<govukwc-details>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `summary` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| summary|string|""|""| 
 
 ### Slots
 

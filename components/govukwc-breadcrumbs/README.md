@@ -1,35 +1,30 @@
-# Breadcrumbs
+# gov-uk-breadcrumbs
 
-See: https://design-system.service.gov.uk/components/breadcrumbs/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/breadcrumbs/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/breadcrumbs/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-breadcrumbs.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-breadcrumbs></govukwc-breadcrumbs>
-```
-
-## &lt;govukwc-breadcrumbs&gt;
+## `<govukwc-breadcrumbs>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `items` | `array` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| items|array|""|""| 
 
-## &lt;govukwc-breadcrumbs-item&gt;
+## `<govukwc-breadcrumbs-item>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `url` | `string` |
-| `label` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| url|string|""|""
+| label|string|""|""| 
 

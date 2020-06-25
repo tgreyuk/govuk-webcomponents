@@ -1,38 +1,33 @@
-# Radios
+# gov-uk-radios
 
-See: https://design-system.service.gov.uk/components/radios/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/radios/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/radios/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-radios.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-radios></govukwc-radios>
-```
-
-## &lt;govukwc-radios&gt;
+## `<govukwc-radios>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `legend` | `string` |
-| `hint` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| legend|string|""|""
+| hint|string|""|""| 
 
-## &lt;govukwc-radio&gt;
+## `<govukwc-radio>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `id` | `string` |
-| `name` | `string` |
-| `label` | `string` |
-| `value` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| id|string|""|""
+| name|string|""|""
+| label|string|""|""
+| value|string|""|""| 
 

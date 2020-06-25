@@ -1,26 +1,21 @@
-# Warning Text
+# gov-uk-warning-text
 
-See: https://design-system.service.gov.uk/components/warning-text/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/warning-text/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/warning-text/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-warning-text.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-warning-text></govukwc-warning-text>
-```
-
-## &lt;govukwc-warning-text&gt;
+## `<govukwc-warning-text>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `text` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| text|string|""|""| 
 

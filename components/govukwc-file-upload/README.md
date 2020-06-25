@@ -1,28 +1,23 @@
-# File Upload
+# gov-uk-file-upload
 
-See: https://design-system.service.gov.uk/components/file-upload/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/file-upload/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/file-upload/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-file-upload.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-file-upload></govukwc-file-upload>
-```
-
-## &lt;govukwc-file-upload&gt;
+## `<govukwc-file-upload>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `id` | `string` |
-| `name` | `string` |
-| `label` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| id|string|""|""
+| name|string|""|""
+| label|string|"Upload a file"|""| 
 

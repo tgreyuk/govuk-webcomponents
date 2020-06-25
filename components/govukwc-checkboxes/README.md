@@ -1,38 +1,33 @@
-# Checkboxes
+# gov-uk-checkboxes
 
-See: https://design-system.service.gov.uk/components/checkboxes/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/checkboxes/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/checkboxes/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-checkboxes.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-checkboxes></govukwc-checkboxes>
-```
-
-## &lt;govukwc-checkboxes&gt;
+## `<govukwc-checkboxes>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `legend` | `string` |
-| `hint` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| legend|string|""|""
+| hint|string|""|""| 
 
-## &lt;govukwc-checkbox&gt;
+## `<govukwc-checkbox>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `id` | `string` |
-| `name` | `string` |
-| `label` | `string` |
-| `value` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| id|string|""|""
+| name|string|""|""
+| label|string|""|""
+| value|string|""|""| 
 

@@ -1,28 +1,23 @@
-# Error Summary
+# gov-uk-error-summary
 
-See: https://design-system.service.gov.uk/components/error-summary/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/error-summary/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/error-summary/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-error-summary.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-error-summary></govukwc-error-summary>
-```
-
-## &lt;govukwc-error-summary&gt;
+## `<govukwc-error-summary>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `title` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| title|string|""|""| 
 
 ### Slots
 
@@ -30,12 +25,12 @@ import 'govukwc-webcomponents/components/govukwc-error-summary.component.js';
 |-----------|-----------|
 | `Default` | `Messages` |
 
-## &lt;govukwc-error-summary-item&gt;
+## `<govukwc-error-summary-item>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `target` | `string` |
-| `message` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| target|string|""|""
+| message|string|""|""| 
 

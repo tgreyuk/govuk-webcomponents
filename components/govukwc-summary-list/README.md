@@ -1,22 +1,17 @@
-# Summary List
+# gov-uk-summary-list
 
-See: https://design-system.service.gov.uk/components/summary-list/
+- [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/summary-list/)
+- [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/summary-list/)
 
 ## Usage
-
-**Js**
 
 ```javascript
 import 'govukwc-webcomponents/components/govukwc-summary-list.component.js';
 ```
 
-**Markup**
+## API
 
-```markup
-<govukwc-summary-list></govukwc-summary-list>
-```
-
-## &lt;govukwc-summary-list&gt;
+## `<govukwc-summary-list>`
 
 ### Slots
 
@@ -30,15 +25,15 @@ import 'govukwc-webcomponents/components/govukwc-summary-list.component.js';
 |-----------|-----------|
 | `clicked` | `Fires when action has been clicked` |
 
-## &lt;govukwc-summary-list-row&gt;
+## `<govukwc-summary-list-row>`
 
 ### Properties
 
-| Property  |  Type     |
-|-----------|-----------|
-| `key` | `string` |
-| `value` | `string` |
-| `action` | `string` |
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| key|string|""|""
+| value|string|""|""
+| action|string|""|""| 
 
 ### Slots
 

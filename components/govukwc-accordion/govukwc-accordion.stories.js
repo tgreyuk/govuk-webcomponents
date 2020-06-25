@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
-import './govukwc-accordion.component.js';
 import { readme } from './govukwc-accordion.docs.js';
+import './govukwc-accordion.component.js';
 
 export default {
   title: 'Accordion',
@@ -14,18 +14,24 @@ export default {
 
 export const Default = () =>
   html`<govukwc-accordion id="accordion-default">
-    <govukwc-accordion-section heading="Writing well for the web"
-      >This is the content for Writing well for the
-      web.</govukwc-accordion-section
+    <govukwc-accordion-section heading="Writing well for the web">
+      <p class="govuk-body">
+        This is the content for Writing well for the web.
+      </p></govukwc-accordion-section
     >
-    <govukwc-accordion-section heading="Writing well for specialists"
-      >This is the content for Writing well for
-      specialists.</govukwc-accordion-section
+    <govukwc-accordion-section heading="Writing well for specialists">
+      <p class="govuk-body">
+        This is the content for Writing well for specialists.
+      </p></govukwc-accordion-section
     >
-    <govukwc-accordion-section heading="Know your audience"
-      >This is the content for Know your audience.</govukwc-accordion-section
+    <govukwc-accordion-section heading="Know your audience">
+      <p class="govuk-body">
+        This is the content for Know your audience.
+      </p></govukwc-accordion-section
     >
-    <govukwc-accordion-section heading="How people read"
-      >This is the content for How people read.</govukwc-accordion-section
+    <govukwc-accordion-section heading="How people read">
+      <p class="govuk-body">
+        This is the content for How people read.
+      </p></govukwc-accordion-section
     >
   </govukwc-accordion>`.getHTML();

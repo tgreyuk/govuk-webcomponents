@@ -1,13 +1,15 @@
 import { html, LitElement } from 'lit-element';
 
 /**
- * @slot Default - Accordion body content
+ * @slot default - Accordion body content
  */
 export class AccordionSectionComponent extends LitElement {
   static get properties() {
     return {
+      /**
+       * Heading / toggle text
+       */
       heading: { type: String },
-      body: { type: String },
     };
   }
 
@@ -36,9 +38,7 @@ export class AccordionSectionComponent extends LitElement {
         class="govuk-accordion__section-content"
         aria-labelledby=${headingId}
       >
-        <p class="govuk-body">
-          <slot></slot>
-        </p>
+        <slot></slot>
       </div>
     </div>`;
   }

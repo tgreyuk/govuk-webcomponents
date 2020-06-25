@@ -1,8 +1,8 @@
 import { html } from 'lit-element';
 import componentStyles from './govukwc-select.styles';
-import { FormGroup } from '../form-group/form-group';
+import { FormGroup } from '../../base/form-group/form-group';
+import { getSlotHTML, wrapEl } from '../../base/utils';
 import './govukwc-select-option.component';
-import { replaceSlot, wrapEl } from '../utils';
 
 export class SelectComponent extends FormGroup {
   static get styles() {
@@ -17,14 +17,16 @@ export class SelectComponent extends FormGroup {
     super.connectedCallback();
   }
 
-  firstUpdated() {
+  async firstUpdated() {
     const slot = this.shadowRoot.querySelector('slot');
-    replaceSlot(slot);
     const select = document.createElement('select');
     select.setAttribute('class', 'govuk-select');
     select.setAttribute('id', this.id);
     select.setAttribute('name', this.name);
     wrapEl(slot, select);
+
+    const slotHTML = await getSlotHTML(slot);
+    slot.parentNode.innerHTML = slotHTML;
   }
 
   renderControl() {

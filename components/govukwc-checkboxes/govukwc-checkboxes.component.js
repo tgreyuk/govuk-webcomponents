@@ -1,6 +1,6 @@
 import componentStyles from './govukwc-checkboxes.styles';
 import { FieldsetComponent } from '../govukwc-fieldset/govukwc-fieldset.component';
-import { replaceSlot, wrapEl } from '../utils';
+import { getSlotHTML, wrapEl } from '../../base/utils';
 import './govukwc-checkbox.component';
 
 export class CheckboxesComponent extends FieldsetComponent {
@@ -16,12 +16,14 @@ export class CheckboxesComponent extends FieldsetComponent {
     super.connectedCallback();
   }
 
-  firstUpdated() {
+  async firstUpdated() {
     const wrapper = document.createElement('div');
     const slot = this.shadowRoot.querySelector('slot');
     wrapper.setAttribute('class', 'govuk-checkboxes');
     wrapEl(slot, wrapper);
-    replaceSlot(slot);
+    const slotHTML = await getSlotHTML(slot);
+    slot.parentNode.innerHTML = slotHTML;
+    return;
   }
 }
 

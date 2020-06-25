@@ -1,7 +1,7 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govukwc-error-summary.styles';
 import './govukwc-error-summary-item.component';
-import { replaceSlot } from '../utils';
+import { getSlotHTML } from '../../base/utils';
 import { ErrorSummary } from './govukwc-error-summary.script';
 
 /**
@@ -15,7 +15,7 @@ export class ErrorSummaryComponent extends LitElement {
     };
   }
 
-  static get styles() {
+  static get stylesp() {
     return [componentStyles];
   }
 
@@ -56,14 +56,14 @@ export class ErrorSummaryComponent extends LitElement {
     this.title = 'There is a problem';
   }
 
-  firstUpdated() {
+  async firstUpdated() {
     const errorSummary = this.shadowRoot.querySelector(
       '[data-module=govuk-error-summary]',
     );
     const slot = this.shadowRoot.querySelector('slot');
-    replaceSlot(slot, () => {
-      new ErrorSummary(errorSummary).init();
-    });
+    const slotHTML = await getSlotHTML(slot);
+    slot.parentNode.innerHTML = slotHTML;
+    new ErrorSummary(errorSummary).init();
   }
 
   render() {

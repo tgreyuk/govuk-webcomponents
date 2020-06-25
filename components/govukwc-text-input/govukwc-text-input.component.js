@@ -2,7 +2,7 @@ import { html } from 'lit-element';
 import { ifDefined } from 'lit-html/directives/if-defined';
 import { classMap } from 'lit-html/directives/class-map';
 import componentStyles from './govukwc-text-input.styles';
-import { FormGroup } from '../form-group/form-group';
+import { FormGroup } from '../../base/form-group/form-group';
 
 export class TextInputComponent extends FormGroup {
   static get properties() {

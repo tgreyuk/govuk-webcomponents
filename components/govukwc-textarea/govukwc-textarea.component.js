@@ -1,6 +1,6 @@
 import { html } from 'lit-element';
 import componentStyles from './govukwc-textarea.styles';
-import { FormGroup } from '../form-group/form-group';
+import { FormGroup } from '../../base/form-group/form-group';
 
 export class TextAreaComponent extends FormGroup {
   static get properties() {

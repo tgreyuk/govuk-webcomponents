@@ -1,7 +1,6 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govukwc-tabs.styles';
 import './govukwc-tabs-panel.component';
-import { replaceSlot } from '../utils';
 import { Tabs } from './govukwc-tabs.script';
 
 export class TabsComponent extends LitElement {

@@ -1,6 +1,6 @@
 import componentStyles from './govukwc-radios.styles';
 import { FieldsetComponent } from '../govukwc-fieldset/govukwc-fieldset.component';
-import { replaceSlot, wrapEl } from '../utils';
+import { getSlotHTML, wrapEl } from '../../base/utils';
 import './govukwc-radio.component';
 
 export class RadiosComponent extends FieldsetComponent {
@@ -16,12 +16,13 @@ export class RadiosComponent extends FieldsetComponent {
     super.connectedCallback();
   }
 
-  firstUpdated() {
+  async firstUpdated() {
     const wrapper = document.createElement('div');
     const slot = this.shadowRoot.querySelector('slot');
     wrapper.setAttribute('class', 'govuk-radios govuk-radios--inline');
     wrapEl(slot, wrapper);
-    replaceSlot(slot);
+    const slotHTML = await getSlotHTML(slot);
+    slot.parentNode.innerHTML = slotHTML;
   }
 }
 

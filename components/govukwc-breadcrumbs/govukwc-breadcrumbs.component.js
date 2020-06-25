@@ -1,7 +1,7 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govukwc-breadcrumbs.styles';
 import './govukwc-breadcrumbs-item.component';
-import { replaceSlot } from '../utils';
+import { getSlotHTML } from '../../base/utils';
 
 export class BreadcrumbsComponent extends LitElement {
   static get properties() {
@@ -22,9 +22,10 @@ export class BreadcrumbsComponent extends LitElement {
     super.connectedCallback();
   }
 
-  firstUpdated() {
+  async firstUpdated() {
     const slot = this.shadowRoot.querySelector('slot');
-    replaceSlot(slot);
+    const slotHTML = await getSlotHTML(slot);
+    slot.parentNode.innerHTML = slotHTML;
   }
   render() {
     return html`<div class="govuk-breadcrumbs">

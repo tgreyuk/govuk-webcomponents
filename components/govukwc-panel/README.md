@@ -1,4 +1,4 @@
-# gov-uk-panel
+# govukwc-panel
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/panel/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/panel/)

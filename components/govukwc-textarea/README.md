@@ -1,4 +1,4 @@
-# gov-uk-textarea
+# govukwc-textarea
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/textarea/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/textarea/)

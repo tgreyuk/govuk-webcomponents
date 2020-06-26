@@ -1,4 +1,4 @@
-# gov-uk-skip-link
+# govukwc-skip-link
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/skip-link/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/skip-link/)

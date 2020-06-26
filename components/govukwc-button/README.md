@@ -1,4 +1,4 @@
-# gov-uk-button
+# govukwc-button
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/button/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/button/)

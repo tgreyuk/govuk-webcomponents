@@ -1,4 +1,4 @@
-# gov-uk-character-count
+# govukwc-character-count
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/character-count/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/character-count/)

@@ -1,4 +1,4 @@
-# gov-uk-file-upload
+# govukwc-file-upload
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/file-upload/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/file-upload/)

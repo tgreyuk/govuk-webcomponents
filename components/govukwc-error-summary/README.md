@@ -1,4 +1,4 @@
-# gov-uk-error-summary
+# govukwc-error-summary
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/error-summary/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/error-summary/)

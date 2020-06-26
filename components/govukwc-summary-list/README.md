@@ -1,4 +1,4 @@
-# gov-uk-summary-list
+# govukwc-summary-list
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/summary-list/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/summary-list/)

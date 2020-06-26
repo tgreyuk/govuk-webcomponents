@@ -26,7 +26,7 @@ const compileDocs = (file) => {
     );
 
   const originalName = file.split('govukwc-')[1];
-  const md = `# gov-uk-${originalName.replace('/', '')}
+  const md = `# govukwc-${originalName.replace('/', '')}
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/${originalName})
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/${originalName})

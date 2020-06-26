@@ -1,4 +1,4 @@
-# gov-uk-tabs
+# govukwc-tabs
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/tabs/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/tabs/)

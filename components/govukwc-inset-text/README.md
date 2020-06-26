@@ -1,4 +1,4 @@
-# gov-uk-inset-text
+# govukwc-inset-text
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/inset-text/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/inset-text/)

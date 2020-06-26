@@ -1,4 +1,4 @@
-# gov-uk-text-input
+# govukwc-text-input
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/text-input/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/text-input/)

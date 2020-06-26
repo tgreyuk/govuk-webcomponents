@@ -1,4 +1,4 @@
-# gov-uk-tag
+# govukwc-tag
 
 - [Reference docs at GOV.UK](https://design-system.service.gov.uk/components/tag/)
 - [Storybook demo and code samples](http://tgreyuk.github.io/govuk-webcomponents/storybook/?path=/story/tag/)

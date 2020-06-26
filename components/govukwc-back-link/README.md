@@ -6,7 +6,7 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-back-link.component.js';
+import 'govukwc-webcomponents/components/govukwc-back-link/govukwc-back-link';
 ```
 
 ## API

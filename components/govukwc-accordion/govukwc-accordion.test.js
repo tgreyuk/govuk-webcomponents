@@ -1,6 +1,6 @@
 import { fixture, expect, aTimeout } from '@open-wc/testing';
 import * as stories from './govukwc-accordion.stories';
-import './govukwc-accordion.component';
+import './govukwc-accordion';
 
 describe('AccordionComponent', () => {
   it(`should render`, async () => {

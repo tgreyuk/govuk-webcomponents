@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-details.docs';
-import './govukwc-details.component';
+import './govukwc-details';
 
 export default {
   title: 'Details',

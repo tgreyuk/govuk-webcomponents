@@ -3,7 +3,7 @@ import coreStyles from '../../base/styles/core.styles';
 import componentStyles from './govukwc-accordion.styles';
 import { Accordion } from './govukwc-accordion.script';
 import { getSlotHTML } from '../../base/utils';
-import './govukwc-accordion-section.component';
+import './govukwc-accordion-section';
 
 /**
  * @slot default - Accepts x number of <govuk-accordion-section> elements

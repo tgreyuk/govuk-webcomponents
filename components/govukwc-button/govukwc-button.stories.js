@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-button.docs';
-import './govukwc-button.component';
+import './govukwc-button';
 
 export default {
   title: 'Button',

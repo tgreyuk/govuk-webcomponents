@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-tag.docs';
-import './govukwc-tag.component';
+import './govukwc-tag';
 
 export default {
   title: 'Tag',

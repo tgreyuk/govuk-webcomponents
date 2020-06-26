@@ -6,24 +6,10 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-accordion.component.js';
+import 'govukwc-webcomponents/components/govukwc-accordion/govukwc-accordion';
 ```
 
 ## API
-
-## `<govukwc-accordion>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| id|string|""|A unique id to describe the accordion| 
-
-### Slots
-
-| Name  |  Description     |
-|-----------|-----------|
-| `default` | `Accepts x number of <govuk-accordion-section> elements` |
 
 ## `<govukwc-accordion-section>`
 
@@ -38,4 +24,18 @@ import 'govukwc-webcomponents/components/govukwc-accordion.component.js';
 | Name  |  Description     |
 |-----------|-----------|
 | `default` | `Accordion body content` |
+
+## `<govukwc-accordion>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| id|string|""|A unique id to describe the accordion| 
+
+### Slots
+
+| Name  |  Description     |
+|-----------|-----------|
+| `default` | `Accepts x number of <govuk-accordion-section> elements` |
 

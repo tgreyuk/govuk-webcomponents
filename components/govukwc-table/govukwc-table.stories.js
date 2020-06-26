@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-table.docs';
-import './govukwc-table.component';
+import './govukwc-table';
 
 export default {
   title: 'Table',

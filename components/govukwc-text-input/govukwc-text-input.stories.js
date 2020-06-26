@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-text-input.docs';
-import './govukwc-text-input.component';
+import './govukwc-text-input';
 
 export default {
   title: 'Text Input',

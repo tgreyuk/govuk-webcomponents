@@ -2,7 +2,7 @@ import { html } from 'lit-element';
 import componentStyles from './govukwc-select.styles';
 import { FormGroup } from '../../base/form-group/form-group';
 import { getSlotHTML, wrapEl } from '../../base/utils';
-import './govukwc-select-option.component';
+import './govukwc-select-option';
 
 export class SelectComponent extends FormGroup {
   static get styles() {

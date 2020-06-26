@@ -6,7 +6,7 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-skip-link.component.js';
+import 'govukwc-webcomponents/components/govukwc-skip-link/govukwc-skip-link';
 ```
 
 ## API

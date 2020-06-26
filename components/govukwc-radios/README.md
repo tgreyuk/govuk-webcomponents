@@ -6,19 +6,10 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-radios.component.js';
+import 'govukwc-webcomponents/components/govukwc-radios/govukwc-radios';
 ```
 
 ## API
-
-## `<govukwc-radios>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| legend|string|""|""
-| hint|string|""|""| 
 
 ## `<govukwc-radio>`
 
@@ -30,4 +21,13 @@ import 'govukwc-webcomponents/components/govukwc-radios.component.js';
 | name|string|""|""
 | label|string|""|""
 | value|string|""|""| 
+
+## `<govukwc-radios>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| legend|string|""|""
+| hint|string|""|""| 
 

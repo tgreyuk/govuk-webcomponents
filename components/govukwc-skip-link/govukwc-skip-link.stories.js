@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-skip-link.docs';
-import './govukwc-skip-link.component';
+import './govukwc-skip-link';
 
 export default {
   title: 'Skip link',

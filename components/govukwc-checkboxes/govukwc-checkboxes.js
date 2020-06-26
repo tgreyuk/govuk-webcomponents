@@ -1,9 +1,9 @@
-import componentStyles from './govukwc-radios.styles';
-import { FieldsetComponent } from '../govukwc-fieldset/govukwc-fieldset.component';
+import componentStyles from './govukwc-checkboxes.styles';
+import { FieldsetComponent } from '../govukwc-fieldset/govukwc-fieldset';
 import { getSlotHTML, wrapEl } from '../../base/utils';
-import './govukwc-radio.component';
+import './govukwc-checkbox';
 
-export class RadiosComponent extends FieldsetComponent {
+export class CheckboxesComponent extends FieldsetComponent {
   static get styles() {
     return [componentStyles];
   }
@@ -19,11 +19,12 @@ export class RadiosComponent extends FieldsetComponent {
   async firstUpdated() {
     const wrapper = document.createElement('div');
     const slot = this.shadowRoot.querySelector('slot');
-    wrapper.setAttribute('class', 'govuk-radios govuk-radios--inline');
+    wrapper.setAttribute('class', 'govuk-checkboxes');
     wrapEl(slot, wrapper);
     const slotHTML = await getSlotHTML(slot);
     slot.parentNode.innerHTML = slotHTML;
+    return;
   }
 }
 
-customElements.define('govukwc-radios', RadiosComponent);
+customElements.define('govukwc-checkboxes', CheckboxesComponent);

@@ -2,7 +2,6 @@ const fs = require('fs-extra');
 const path = require('path');
 const chokidar = require('chokidar');
 const chalk = require('chalk');
-const { startCase } = require('lodash');
 const helpers = require('./helpers');
 
 const customElementJson = fs.readFileSync('./custom-elements.json');
@@ -13,9 +12,19 @@ const formatMarkdown = (md) => md.replace(/[\r\n]{3,}/g, '\n\n');
 const compileDocs = (file) => {
   const folder = path.dirname(file);
   const component = path.basename(path.dirname(file));
+
   const components = fs
     .readdirSync(folder)
-    .filter((file) => file.endsWith('.component.js'));
+    .filter(
+      (file) =>
+        file.endsWith('.js') &&
+        !file.endsWith('.docs.js') &&
+        !file.endsWith('.script.js') &&
+        !file.endsWith('.stories.js') &&
+        !file.endsWith('.styles.js') &&
+        !file.endsWith('.test.js'),
+    );
+
   const originalName = file.split('govukwc-')[1];
   const md = `# gov-uk-${originalName.replace('/', '')}
 
@@ -25,15 +34,14 @@ const compileDocs = (file) => {
 ## Usage
 
 \`\`\`javascript
-import 'govukwc-webcomponents/components/${component}.component.js';
+import 'govukwc-webcomponents/components/${component}/${component}';
 \`\`\`
 
 ## API
 
 ${components
-  .reverse()
   .map((component) => {
-    const name = path.basename(component, '.component.js');
+    const name = path.basename(component, '.js');
 
     const customElement = customElements.find(
       (element) => element.name === name,
@@ -65,11 +73,19 @@ export const readme = \`${formatMarkdown(md).replace(/`/g, '\\`')}\`;\n`,
 };
 
 const compileComponentReadMes = () => {
-  const files = ['./**/*.component.js'];
+  const files = ['./components/**/*.js'];
   const filesWatcher = chokidar.watch(files, {
     persistent: false,
-    ignored: ['node_modules/**/*'],
+    ignored: [
+      'node_modules/**/*',
+      '**/*.docs.js',
+      '**/*.script.js',
+      '**/*.stories.js',
+      '**/*.styles.js',
+      '**/*.test.js',
+    ],
   });
+
   filesWatcher.on('add', (file) => compileDocs(file));
   filesWatcher.on('change', (file) => compileDocs(file));
 };

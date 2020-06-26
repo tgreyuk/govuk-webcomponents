@@ -6,7 +6,7 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-warning-text.component.js';
+import 'govukwc-webcomponents/components/govukwc-warning-text/govukwc-warning-text';
 ```
 
 ## API

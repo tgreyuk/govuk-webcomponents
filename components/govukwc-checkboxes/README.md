@@ -6,19 +6,10 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-checkboxes.component.js';
+import 'govukwc-webcomponents/components/govukwc-checkboxes/govukwc-checkboxes';
 ```
 
 ## API
-
-## `<govukwc-checkboxes>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| legend|string|""|""
-| hint|string|""|""| 
 
 ## `<govukwc-checkbox>`
 
@@ -30,4 +21,13 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes.component.js';
 | name|string|""|""
 | label|string|""|""
 | value|string|""|""| 
+
+## `<govukwc-checkboxes>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| legend|string|""|""
+| hint|string|""|""| 
 

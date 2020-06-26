@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-file-upload.docs';
-import './govukwc-file-upload.component';
+import './govukwc-file-upload';
 
 export default {
   title: 'File upload',

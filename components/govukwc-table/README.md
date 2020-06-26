@@ -6,21 +6,10 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-table.component.js';
+import 'govukwc-webcomponents/components/govukwc-table/govukwc-table';
 ```
 
 ## API
-
-## `<govukwc-table>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| caption|string|""|""
-| columns|array|""|""| 
-
-## `<govukwc-table-row>`
 
 ## `<govukwc-table-cell>`
 
@@ -30,4 +19,15 @@ import 'govukwc-webcomponents/components/govukwc-table.component.js';
 |-----------|-----------|---------|-------------|
 | scope|string|""|""
 | numeric|boolean|""|""| 
+
+## `<govukwc-table-row>`
+
+## `<govukwc-table>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| caption|string|""|""
+| columns|array|""|""| 
 

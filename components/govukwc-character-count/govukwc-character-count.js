@@ -1,6 +1,6 @@
 import componentStyles from './govukwc-character-count.styles';
 import { CharacterCount } from './govukwc-character-count.script';
-import { TextAreaComponent } from '../govukwc-textarea/govukwc-textarea.component';
+import { TextAreaComponent } from '../govukwc-textarea/govukwc-textarea';
 
 export class CharacterCountComponent extends TextAreaComponent {
   static get properties() {

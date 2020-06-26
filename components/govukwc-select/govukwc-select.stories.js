@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-select.docs';
-import './govukwc-select.component';
+import './govukwc-select';
 
 export default {
   title: 'Select',

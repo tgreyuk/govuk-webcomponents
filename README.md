@@ -24,7 +24,7 @@ To quickly try out components the components use the modules directly in the bro
 <body>
   <govukwc-button label="Save and continue"></govukwc-button>
   <script type="module">
-    import 'govuk-webcomponents/components/govukwc-button/govukwc-button.component';
+    import 'govuk-webcomponents/components/govukwc-button/govukwc-button';
   </script>
 </body>
 ```

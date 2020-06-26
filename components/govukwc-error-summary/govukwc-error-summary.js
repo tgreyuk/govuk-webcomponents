@@ -1,8 +1,8 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govukwc-error-summary.styles';
-import './govukwc-error-summary-item.component';
 import { getSlotHTML } from '../../base/utils';
 import { ErrorSummary } from './govukwc-error-summary.script';
+import './govukwc-error-summary-item';
 
 /**
  * @slot Default - Messages
@@ -15,7 +15,7 @@ export class ErrorSummaryComponent extends LitElement {
     };
   }
 
-  static get stylesp() {
+  static get styles() {
     return [componentStyles];
   }
 

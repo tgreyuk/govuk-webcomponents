@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-summary-list.docs';
-import './govukwc-summary-list.component';
+import './govukwc-summary-list';
 
 export default {
   title: 'Summary list',

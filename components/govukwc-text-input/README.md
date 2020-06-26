@@ -6,7 +6,7 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-text-input.component.js';
+import 'govukwc-webcomponents/components/govukwc-text-input/govukwc-text-input';
 ```
 
 ## API

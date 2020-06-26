@@ -6,7 +6,7 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-date-input.component.js';
+import 'govukwc-webcomponents/components/govukwc-date-input/govukwc-date-input';
 ```
 
 ## API

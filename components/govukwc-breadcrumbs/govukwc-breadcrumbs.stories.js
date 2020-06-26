@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
-import { readme } from './govukwc-breadcrumbs.docs.js';
-import './govukwc-breadcrumbs.component.js';
+import { readme } from './govukwc-breadcrumbs.docs';
+import './govukwc-breadcrumbs';
 
 export default {
   title: 'Breadcrumbs',

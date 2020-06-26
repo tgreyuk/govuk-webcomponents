@@ -6,18 +6,10 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-breadcrumbs.component.js';
+import 'govukwc-webcomponents/components/govukwc-breadcrumbs/govukwc-breadcrumbs';
 ```
 
 ## API
-
-## `<govukwc-breadcrumbs>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| items|array|""|""| 
 
 ## `<govukwc-breadcrumbs-item>`
 
@@ -27,4 +19,12 @@ import 'govukwc-webcomponents/components/govukwc-breadcrumbs.component.js';
 |-----------|-----------|---------|-------------|
 | url|string|""|""
 | label|string|""|""| 
+
+## `<govukwc-breadcrumbs>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| items|array|""|""| 
 

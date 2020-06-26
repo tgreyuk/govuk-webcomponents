@@ -1,6 +1,6 @@
-import './govukwc-date-input.component';
-import { readme } from './govukwc-date-input.docs';
 import { html } from 'lit-html';
+import { readme } from './govukwc-date-input.docs';
+import './govukwc-date-input';
 
 export default {
   title: 'Date Input',

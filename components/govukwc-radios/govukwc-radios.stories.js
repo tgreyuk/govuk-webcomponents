@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-radios.docs';
-import './govukwc-radios.component';
+import './govukwc-radios';
 
 export default {
   title: 'Radios',

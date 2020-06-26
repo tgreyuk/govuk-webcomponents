@@ -1,7 +1,7 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govukwc-breadcrumbs.styles';
-import './govukwc-breadcrumbs-item.component';
 import { getSlotHTML } from '../../base/utils';
+import './govukwc-breadcrumbs-item';
 
 export class BreadcrumbsComponent extends LitElement {
   static get properties() {

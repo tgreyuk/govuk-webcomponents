@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
-import { readme } from './govukwc-accordion.docs.js';
-import './govukwc-accordion.component.js';
+import { readme } from './govukwc-accordion.docs';
+import './govukwc-accordion';
 
 export default {
   title: 'Accordion',

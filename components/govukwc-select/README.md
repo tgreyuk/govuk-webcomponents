@@ -6,10 +6,19 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-select.component.js';
+import 'govukwc-webcomponents/components/govukwc-select/govukwc-select';
 ```
 
 ## API
+
+## `<govukwc-select-option>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| label|string|""|""
+| value|string|""|""| 
 
 ## `<govukwc-select>`
 
@@ -25,13 +34,4 @@ import 'govukwc-webcomponents/components/govukwc-select.component.js';
 | message|string|""|""
 | pageLevel|boolean|""|""
 | invalid|boolean|""|""| 
-
-## `<govukwc-select-option>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| label|string|""|""
-| value|string|""|""| 
 

@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-warning-text.docs';
-import './govukwc-warning-text.component';
+import './govukwc-warning-text';
 
 export default {
   title: 'Warning Text',

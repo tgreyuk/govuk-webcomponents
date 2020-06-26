@@ -1,7 +1,7 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govukwc-table.styles';
-import './govukwc-table-row.component';
-import './govukwc-table-cell.component';
+import './govukwc-table-row';
+import './govukwc-table-cell';
 
 export class TableComponent extends LitElement {
   static get properties() {

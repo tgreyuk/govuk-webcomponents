@@ -6,24 +6,10 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-summary-list.component.js';
+import 'govukwc-webcomponents/components/govukwc-summary-list/govukwc-summary-list';
 ```
 
 ## API
-
-## `<govukwc-summary-list>`
-
-### Slots
-
-| Name  |  Description     |
-|-----------|-----------|
-| `Default` | `x number of summary-list-row components` |
-
-### Events
-
-| Name  |  Description     |
-|-----------|-----------|
-| `clicked` | `Fires when action has been clicked` |
 
 ## `<govukwc-summary-list-row>`
 
@@ -40,4 +26,18 @@ import 'govukwc-webcomponents/components/govukwc-summary-list.component.js';
 | Name  |  Description     |
 |-----------|-----------|
 | `Default` | `summary value` |
+
+## `<govukwc-summary-list>`
+
+### Slots
+
+| Name  |  Description     |
+|-----------|-----------|
+| `Default` | `x number of summary-list-row components` |
+
+### Events
+
+| Name  |  Description     |
+|-----------|-----------|
+| `clicked` | `Fires when action has been clicked` |
 

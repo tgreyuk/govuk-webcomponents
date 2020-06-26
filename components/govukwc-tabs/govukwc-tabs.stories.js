@@ -1,7 +1,7 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-tabs.docs';
-import './govukwc-tabs.component';
-import '../govukwc-table/govukwc-table.component';
+import './govukwc-tabs';
+import '../govukwc-table/govukwc-table';
 
 export default {
   title: 'Tabs',

@@ -6,7 +6,7 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-textarea.component.js';
+import 'govukwc-webcomponents/components/govukwc-textarea/govukwc-textarea';
 ```
 
 ## API

@@ -1,7 +1,7 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govukwc-tabs.styles';
-import './govukwc-tabs-panel.component';
 import { Tabs } from './govukwc-tabs.script';
+import './govukwc-tabs-panel';
 
 export class TabsComponent extends LitElement {
   static get properties() {

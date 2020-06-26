@@ -6,7 +6,7 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-character-count.component.js';
+import 'govukwc-webcomponents/components/govukwc-character-count/govukwc-character-count';
 ```
 
 ## API

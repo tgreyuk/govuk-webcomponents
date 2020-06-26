@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-panel.docs';
-import './govukwc-panel.component';
+import './govukwc-panel';
 
 export default {
   title: 'Panel',

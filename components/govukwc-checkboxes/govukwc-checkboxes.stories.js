@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-checkboxes.docs';
-import './govukwc-checkboxes.component';
+import './govukwc-checkboxes';
 
 export default {
   title: 'Checkboxes',

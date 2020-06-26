@@ -6,10 +6,19 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-error-summary.component.js';
+import 'govukwc-webcomponents/components/govukwc-error-summary/govukwc-error-summary';
 ```
 
 ## API
+
+## `<govukwc-error-summary-item>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| target|string|""|""
+| message|string|""|""| 
 
 ## `<govukwc-error-summary>`
 
@@ -24,13 +33,4 @@ import 'govukwc-webcomponents/components/govukwc-error-summary.component.js';
 | Name  |  Description     |
 |-----------|-----------|
 | `Default` | `Messages` |
-
-## `<govukwc-error-summary-item>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| target|string|""|""
-| message|string|""|""| 
 

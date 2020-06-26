@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-character-count.docs';
-import './govukwc-character-count.component';
+import './govukwc-character-count';
 
 export default {
   title: 'Character Count',

@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-back-link.docs';
-import './govukwc-back-link.component';
+import './govukwc-back-link';
 
 export default {
   title: 'Back Link',

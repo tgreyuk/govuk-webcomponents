@@ -1,6 +1,6 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govukwc-summary-list.styles';
-import './govukwc-summary-list-row.component';
+import './govukwc-summary-list-row';
 
 /**
  * @fires clicked - Fires when action has been clicked

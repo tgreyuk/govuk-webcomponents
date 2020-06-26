@@ -6,7 +6,7 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-fieldset.component.js';
+import 'govukwc-webcomponents/components/govukwc-fieldset/govukwc-fieldset';
 ```
 
 ## API

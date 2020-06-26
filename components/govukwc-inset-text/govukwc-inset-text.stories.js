@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-inset-text.docs';
-import './govukwc-inset-text.component';
+import './govukwc-inset-text';
 
 export default {
   title: 'Inset text',

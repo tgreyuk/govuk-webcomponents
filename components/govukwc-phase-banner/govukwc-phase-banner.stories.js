@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-phase-banner.docs';
-import './govukwc-phase-banner.component';
+import './govukwc-phase-banner';
 
 export default {
   title: 'Phase banner',

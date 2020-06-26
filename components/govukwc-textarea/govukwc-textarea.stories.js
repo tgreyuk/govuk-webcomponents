@@ -1,6 +1,6 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-textarea.docs';
-import './govukwc-textarea.component';
+import './govukwc-textarea';
 
 export default {
   title: 'Textarea',

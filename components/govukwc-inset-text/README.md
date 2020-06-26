@@ -6,7 +6,7 @@
 ## Usage
 
 ```javascript
-import 'govukwc-webcomponents/components/govukwc-inset-text.component.js';
+import 'govukwc-webcomponents/components/govukwc-inset-text/govukwc-inset-text';
 ```
 
 ## API

@@ -1,7 +1,7 @@
 import { html } from 'lit-html';
 import { readme } from './govukwc-error-summary.docs';
-import './govukwc-error-summary.component';
-import '../govukwc-text-input/govukwc-text-input.component';
+import './govukwc-error-summary';
+import '../govukwc-text-input/govukwc-text-input';
 
 export default {
   title: 'Error summary',

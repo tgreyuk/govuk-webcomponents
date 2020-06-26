@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-text-input/govukwc-text-input';
 
 ## `<govukwc-text-input>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

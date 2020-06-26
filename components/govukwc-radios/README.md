@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-radios/govukwc-radios';
 
 ## `<govukwc-radios>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
@@ -22,7 +22,7 @@ import 'govukwc-webcomponents/components/govukwc-radios/govukwc-radios';
 
 ## `<govukwc-radio>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

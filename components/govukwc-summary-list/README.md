@@ -13,6 +13,11 @@ import 'govukwc-webcomponents/components/govukwc-summary-list/govukwc-summary-li
 
 ## `<govukwc-summary-list>`
 
+### Attributes
+
+    None
+    
+
 ### Slots
 
 | Name  |  Description     |
@@ -27,7 +32,7 @@ import 'govukwc-webcomponents/components/govukwc-summary-list/govukwc-summary-li
 
 ## `<govukwc-summary-list-row>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

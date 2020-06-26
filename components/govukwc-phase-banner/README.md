@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-phase-banner/govukwc-phase-bann
 
 ## `<govukwc-phase-banner>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

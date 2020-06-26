@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes/govukwc-checkboxes';
 
 ## `<govukwc-checkboxes>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
@@ -22,7 +22,7 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes/govukwc-checkboxes';
 
 ## `<govukwc-checkbox>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

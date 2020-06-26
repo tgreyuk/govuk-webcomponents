@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-tabs/govukwc-tabs';
 
 ## `<govukwc-tabs>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
@@ -22,7 +22,7 @@ import 'govukwc-webcomponents/components/govukwc-tabs/govukwc-tabs';
 
 ## `<govukwc-tabs-panel>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

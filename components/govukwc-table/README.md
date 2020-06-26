@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-table/govukwc-table';
 
 ## `<govukwc-table>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
@@ -22,9 +22,14 @@ import 'govukwc-webcomponents/components/govukwc-table/govukwc-table';
 
 ## `<govukwc-table-row>`
 
+### Attributes
+
+    None
+    
+
 ## `<govukwc-table-cell>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-warning-text/govukwc-warning-te
 
 ## `<govukwc-warning-text>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

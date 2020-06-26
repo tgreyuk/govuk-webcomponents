@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-skip-link/govukwc-skip-link';
 
 ## `<govukwc-skip-link>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

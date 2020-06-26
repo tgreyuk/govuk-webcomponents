@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-tag/govukwc-tag';
 
 ## `<govukwc-tag>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

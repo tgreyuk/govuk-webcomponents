@@ -13,18 +13,23 @@ import 'govukwc-webcomponents/components/govukwc-breadcrumbs/govukwc-breadcrumbs
 
 ## `<govukwc-breadcrumbs>`
 
-### Properties
+### Attributes
 
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| items|array|""|""| 
+    None
+    
+
+### Slots
+
+| Name  |  Description     |
+|-----------|-----------|
+| `default` | `Collection of <govukwc-breadcrumb-item> elements` |
 
 ## `<govukwc-breadcrumbs-item>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| url|string|""|""
-| label|string|""|""| 
+| url|string|""|Breadcrumb url
+| label|string|""|Breadcrumb label| 
 

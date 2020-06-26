@@ -19,4 +19,15 @@ export const storyEvents = (story, cb) => {
       link.addEventListener('click', (e) => e.preventDefault());
     });
   }
+
+  if (story.startsWith('breadcrumbs')) {
+    const breadcrumbs = document.querySelector('govukwc-breadcrumbs');
+    setTimeout(() => {
+      const links = Array.from(breadcrumbs.shadowRoot.querySelectorAll('a'));
+      links.forEach((link) =>
+        link.addEventListener('click', (e) => e.preventDefault()),
+      );
+    });
+  }
+  console.log('STORY', story);
 };

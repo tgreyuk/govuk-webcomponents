@@ -13,3 +13,8 @@ import 'govukwc-webcomponents/components/govukwc-date-input/govukwc-date-input';
 
 ## `<govukwc-date-input>`
 
+### Attributes
+
+    None
+    
+

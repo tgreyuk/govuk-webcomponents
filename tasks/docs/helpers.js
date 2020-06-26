@@ -1,10 +1,13 @@
 const propertiesTable = (properties) => {
   if (!properties) {
-    return '';
+    return `### Attributes
+
+    None
+    `;
   }
   const props = ['name', 'type', 'default', 'description'];
   return `
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

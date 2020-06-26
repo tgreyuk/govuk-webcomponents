@@ -6,7 +6,7 @@ import { getSlotHTML } from '../../base/utils';
 import './govukwc-accordion-section';
 
 /**
- * @slot default - Accepts x number of <govuk-accordion-section> elements
+ * @slot default - Collection of <govuk-accordion-section> elements
  */
 
 export class AccordionComponent extends LitElement {

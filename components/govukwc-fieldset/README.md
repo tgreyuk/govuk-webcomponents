@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-fieldset/govukwc-fieldset';
 
 ## `<govukwc-fieldset>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

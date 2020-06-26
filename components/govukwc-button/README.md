@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-button/govukwc-button';
 
 ## `<govukwc-button>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

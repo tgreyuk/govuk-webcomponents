@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-panel/govukwc-panel';
 
 ## `<govukwc-panel>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

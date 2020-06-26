@@ -109,7 +109,7 @@ const chalk = require('chalk');
     <script type="module">
       import { html, render } from 'lit-html';
       import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
-      import { storyEvents } from '../.storybook/utils.js';
+      import { storyEvents } from '../.storybook/events.js';
       import * as ${component.name} from '../components/${component.el}/${
     component.el
   }.stories.js';

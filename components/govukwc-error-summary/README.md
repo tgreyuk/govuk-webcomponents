@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-error-summary/govukwc-error-sum
 
 ## `<govukwc-error-summary>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
@@ -27,7 +27,7 @@ import 'govukwc-webcomponents/components/govukwc-error-summary/govukwc-error-sum
 
 ## `<govukwc-error-summary-item>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

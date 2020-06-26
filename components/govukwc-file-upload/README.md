@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-file-upload/govukwc-file-upload
 
 ## `<govukwc-file-upload>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

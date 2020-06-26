@@ -7,7 +7,7 @@ import { addons } from '@storybook/addons';
 import { withHTML } from '@whitespace/storybook-addon-html/html';
 import { addReadme } from 'storybook-readme/html';
 import { logEvent } from 'storybook-events-logger';
-import { storyEvents } from './utils';
+import { storyEvents } from './events';
 
 addDecorator(withHTML);
 addDecorator(addReadme);

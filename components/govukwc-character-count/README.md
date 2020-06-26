@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-character-count/govukwc-charact
 
 ## `<govukwc-character-count>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-select/govukwc-select';
 
 ## `<govukwc-select>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
@@ -28,7 +28,7 @@ import 'govukwc-webcomponents/components/govukwc-select/govukwc-select';
 
 ## `<govukwc-select-option>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

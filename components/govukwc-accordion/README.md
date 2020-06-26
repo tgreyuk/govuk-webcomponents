@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-accordion/govukwc-accordion';
 
 ## `<govukwc-accordion>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
@@ -23,11 +23,11 @@ import 'govukwc-webcomponents/components/govukwc-accordion/govukwc-accordion';
 
 | Name  |  Description     |
 |-----------|-----------|
-| `default` | `Accepts x number of <govuk-accordion-section> elements` |
+| `default` | `Collection of <govuk-accordion-section> elements` |
 
 ## `<govukwc-accordion-section>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

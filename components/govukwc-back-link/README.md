@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-back-link/govukwc-back-link';
 
 ## `<govukwc-back-link>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

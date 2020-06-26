@@ -13,7 +13,7 @@ import 'govukwc-webcomponents/components/govukwc-textarea/govukwc-textarea';
 
 ## `<govukwc-textarea>`
 
-### Properties
+### Attributes
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|

@@ -13,6 +13,11 @@ import 'govukwc-webcomponents/components/govukwc-inset-text/govukwc-inset-text';
 
 ## `<govukwc-inset-text>`
 
+### Attributes
+
+    None
+    
+
 ### Slots
 
 | Name  |  Description     |

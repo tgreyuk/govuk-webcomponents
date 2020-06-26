@@ -1,12 +1,10 @@
 # govuk-webcomponents
 
-A set of encapsulated Web components consuming the [GOV.UK Design System](https://design-system.service.gov.uk/components/).
+A set of encapsulated [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) consuming the [GOV.UK Design System](https://design-system.service.gov.uk/components/).
 
 [![npm](https://img.shields.io/npm/v/govuk-webcomponents.svg)](https://www.npmjs.com/package/govuk-webcomponents)
 
 Please note this package is not affiliated to GOV.UK but consumes code as distributed in the [govuk-frontend](https://www.npmjs.com/package/govuk-frontend) npm package (v3.7.0).
-
-Please visit the [Storybook](https://tgreyuk.github.io/govuk-webcomponents/storybook) site for demos and code examples.
 
 ## Installation
 
@@ -14,7 +12,36 @@ Please visit the [Storybook](https://tgreyuk.github.io/govuk-webcomponents/story
 npm install --save govuk-webcomponents
 ```
 
+## Usage
+
+The web components are distributed as ES modules and can be used with any platform.
+
+### Modern browsers (Bare module specifiers)
+
+To quickly try out components the components use the modules directly in the browser and serve with a process that supports bare module specifier resolution such as [es-dev-server](https://www.npmjs.com/package/es-dev-server).
+
+```html
+<body>
+  <govukwc-button label="Save and continue"></govukwc-button>
+  <script type="module">
+    import 'govuk-webcomponents/components/govukwc-button/govukwc-button.component';
+  </script>
+</body>
+```
+
+### Browsers to IE11 (Compiling to ES5)
+
+To support browsers (down to IE11) a combination of polyfills and build steps will need to be taken.
+
+At a highlevel outline the following is required:
+
+- Transpiling to ES5 will be required using build tools such as Webpack or Rollup.
+- The [webcomponents.js](https://www.npmjs.com/package/@webcomponents/webcomponentsjs) pollyfills will need to be loaded.
+
 ## Components
+
+Please visit the [Storybook](https://tgreyuk.github.io/govuk-webcomponents/storybook) site for demos and code examples.
+
 - [\<govukwc-accordion>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-accordion/README.md)
 - [\<govukwc-back-link>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-back-link/README.md)
 - [\<govukwc-breadcrumbs>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-breadcrumbs/README.md)

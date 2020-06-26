@@ -85,6 +85,9 @@ const updateAppReadMe = () => {
   const md = `${withoutComponents}
 
 ## Components
+
+Please visit the [Storybook](https://tgreyuk.github.io/govuk-webcomponents/storybook) site for demos and code examples.
+
 ${components
   .map(
     (component) =>

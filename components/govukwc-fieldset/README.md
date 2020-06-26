@@ -17,6 +17,6 @@ import 'govukwc-webcomponents/components/govukwc-fieldset/govukwc-fieldset';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| legend|string|""|""
-| hint|string|""|""| 
+| `legend`|`string`|""|""
+| `hint`|`string`|""|""| 
 

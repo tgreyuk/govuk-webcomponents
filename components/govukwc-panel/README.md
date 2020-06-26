@@ -17,7 +17,7 @@ import 'govukwc-webcomponents/components/govukwc-panel/govukwc-panel';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| title|string|""|""| 
+| `title`|`string`|""|""| 
 
 ### Slots
 

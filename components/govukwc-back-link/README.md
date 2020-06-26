@@ -17,6 +17,6 @@ import 'govukwc-webcomponents/components/govukwc-back-link/govukwc-back-link';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| url|string|""|The back link url
-| label|string|"Back"|The back link label| 
+| `url`|`string`|""|The back link url
+| `label`|`string`|"Back"|The back link label| 
 

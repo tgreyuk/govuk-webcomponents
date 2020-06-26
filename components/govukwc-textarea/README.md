@@ -17,13 +17,13 @@ import 'govukwc-webcomponents/components/govukwc-textarea/govukwc-textarea';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| rows|number|5|""
-| id|string|""|""
-| name|string|""|""
-| label|string|""|""
-| hint|string|""|""
-| error|string|""|""
-| message|string|""|""
-| pageLevel|boolean|""|""
-| invalid|boolean|""|""| 
+| `rows`|`number`|5|""
+| `id`|`string`|""|""
+| `name`|`string`|""|""
+| `label`|`string`|""|""
+| `hint`|`string`|""|""
+| `error`|`string`|""|""
+| `message`|`string`|""|""
+| `pageLevel`|`boolean`|""|""
+| `invalid`|`boolean`|""|""| 
 

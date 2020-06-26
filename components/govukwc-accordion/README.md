@@ -17,7 +17,7 @@ import 'govukwc-webcomponents/components/govukwc-accordion/govukwc-accordion';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| id|string|""|A unique id to describe the accordion| 
+| `id`|`string`|""|A unique id to describe the accordion| 
 
 ### Slots
 
@@ -31,7 +31,7 @@ import 'govukwc-webcomponents/components/govukwc-accordion/govukwc-accordion';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| heading|string|""|Heading / toggle text| 
+| `heading`|`string`|""|Heading / toggle text| 
 
 ### Slots
 

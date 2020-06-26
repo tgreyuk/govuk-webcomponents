@@ -17,8 +17,8 @@ import 'govukwc-webcomponents/components/govukwc-tabs/govukwc-tabs';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| id|string|""|""
-| title|string|""|""| 
+| `id`|`string`|""|""
+| `title`|`string`|""|""| 
 
 ## `<govukwc-tabs-panel>`
 
@@ -26,6 +26,6 @@ import 'govukwc-webcomponents/components/govukwc-tabs/govukwc-tabs';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| heading|string|""|""
-| id|""|""|""| 
+| `heading`|`string`|""|""
+| `id`|""|""|""| 
 

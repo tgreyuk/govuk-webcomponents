@@ -17,13 +17,13 @@ import 'govukwc-webcomponents/components/govukwc-text-input/govukwc-text-input';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| width|"20"  \|"10"\|"5"\|"4"\|"3"\|"2"\|"full"\|"three-quarters"\|"two-thirds"\|"one-half"\|"one-third"\|"one-quarter"|"20"|""
-| id|string|""|""
-| name|string|""|""
-| label|string|""|""
-| hint|string|""|""
-| error|string|""|""
-| message|string|""|""
-| pageLevel|boolean|""|""
-| invalid|boolean|""|""| 
+| `width`|`"20"  \|"10"\|"5"\|"4"\|"3"\|"2"\|"full"\|"three-quarters"\|"two-thirds"\|"one-half"\|"one-third"\|"one-quarter"`|"20"|""
+| `id`|`string`|""|""
+| `name`|`string`|""|""
+| `label`|`string`|""|""
+| `hint`|`string`|""|""
+| `error`|`string`|""|""
+| `message`|`string`|""|""
+| `pageLevel`|`boolean`|""|""
+| `invalid`|`boolean`|""|""| 
 

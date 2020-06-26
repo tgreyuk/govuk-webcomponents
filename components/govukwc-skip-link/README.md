@@ -17,7 +17,7 @@ import 'govukwc-webcomponents/components/govukwc-skip-link/govukwc-skip-link';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| label|string|"Skip to main content"|""| 
+| `label`|`string`|"Skip to main content"|""| 
 
 ### Slots
 

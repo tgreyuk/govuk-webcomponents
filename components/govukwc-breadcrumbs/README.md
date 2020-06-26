@@ -30,6 +30,6 @@ import 'govukwc-webcomponents/components/govukwc-breadcrumbs/govukwc-breadcrumbs
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| url|string|""|Breadcrumb url
-| label|string|""|Breadcrumb label| 
+| `url`|`string`|""|Breadcrumb url
+| `label`|`string`|""|Breadcrumb label| 
 

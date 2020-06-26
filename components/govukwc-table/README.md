@@ -17,8 +17,8 @@ import 'govukwc-webcomponents/components/govukwc-table/govukwc-table';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| caption|string|""|""
-| columns|array|""|""| 
+| `caption`|`string`|""|""
+| `columns`|`array`|""|""| 
 
 ## `<govukwc-table-row>`
 
@@ -33,6 +33,6 @@ import 'govukwc-webcomponents/components/govukwc-table/govukwc-table';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| scope|string|""|""
-| numeric|boolean|""|""| 
+| `scope`|`string`|""|""
+| `numeric`|`boolean`|""|""| 
 

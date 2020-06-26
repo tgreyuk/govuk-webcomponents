@@ -17,8 +17,8 @@ import 'govukwc-webcomponents/components/govukwc-radios/govukwc-radios';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| legend|string|""|""
-| hint|string|""|""| 
+| `legend`|`string`|""|""
+| `hint`|`string`|""|""| 
 
 ## `<govukwc-radio>`
 
@@ -26,8 +26,8 @@ import 'govukwc-webcomponents/components/govukwc-radios/govukwc-radios';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| id|string|""|""
-| name|string|""|""
-| label|string|""|""
-| value|string|""|""| 
+| `id`|`string`|""|""
+| `name`|`string`|""|""
+| `label`|`string`|""|""
+| `value`|`string`|""|""| 
 

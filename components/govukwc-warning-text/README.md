@@ -17,5 +17,5 @@ import 'govukwc-webcomponents/components/govukwc-warning-text/govukwc-warning-te
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| text|string|""|""| 
+| `text`|`string`|""|""| 
 

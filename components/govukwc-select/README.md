@@ -17,14 +17,14 @@ import 'govukwc-webcomponents/components/govukwc-select/govukwc-select';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| id|string|""|""
-| name|string|""|""
-| label|string|""|""
-| hint|string|""|""
-| error|string|""|""
-| message|string|""|""
-| pageLevel|boolean|""|""
-| invalid|boolean|""|""| 
+| `id`|`string`|""|""
+| `name`|`string`|""|""
+| `label`|`string`|""|""
+| `hint`|`string`|""|""
+| `error`|`string`|""|""
+| `message`|`string`|""|""
+| `pageLevel`|`boolean`|""|""
+| `invalid`|`boolean`|""|""| 
 
 ## `<govukwc-select-option>`
 
@@ -32,6 +32,6 @@ import 'govukwc-webcomponents/components/govukwc-select/govukwc-select';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| label|string|""|""
-| value|string|""|""| 
+| `label`|`string`|""|""
+| `value`|`string`|""|""| 
 

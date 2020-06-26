@@ -6,6 +6,12 @@ const propertiesTable = (properties) => {
     `;
   }
   const props = ['name', 'type', 'default', 'description'];
+  const setProp = (properties, prop) => {
+    if (prop === 'name' || prop === 'type') {
+      return '`' + properties[prop] + '`';
+    }
+    return properties[prop];
+  };
   return `
 ### Attributes
 
@@ -17,7 +23,7 @@ ${
       (properties) =>
         '| ' +
         props
-          .map((prop) => (properties[prop] ? properties[prop] : '""'))
+          .map((prop) => (properties[prop] ? setProp(properties, prop) : '""'))
           .join(`|`),
     )
     .join('\n') + '| '
@@ -48,7 +54,10 @@ const eventsTable = (events) => {
 | Name  |  Description     |
 |-----------|-----------|
 ${events
-  .map((event) => `| \`${event.name}\` | \`${event.description}\` |`)
+  .map(
+    (event) =>
+      `| \`${event.name}\` | ${event.description.replace(/\n/g, '<br />')} |`,
+  )
   .join('\n')}`;
 };
 

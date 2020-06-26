@@ -17,6 +17,6 @@ import 'govukwc-webcomponents/components/govukwc-tag/govukwc-tag';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| label|string|""|""
-| colour|string|""|""| 
+| `label`|`string`|""|""
+| `colour`|`string`|""|""| 
 

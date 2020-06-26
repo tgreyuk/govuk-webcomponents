@@ -17,7 +17,7 @@ import 'govukwc-webcomponents/components/govukwc-phase-banner/govukwc-phase-bann
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| tag|string|""|""| 
+| `tag`|`string`|""|""| 
 
 ### Slots
 

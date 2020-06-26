@@ -17,7 +17,7 @@ import 'govukwc-webcomponents/components/govukwc-file-upload/govukwc-file-upload
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| id|string|""|""
-| name|string|""|""
-| label|string|"Upload a file"|""| 
+| `id`|`string`|""|""
+| `name`|`string`|""|""
+| `label`|`string`|"Upload a file"|""| 
 

@@ -28,7 +28,7 @@ import 'govukwc-webcomponents/components/govukwc-summary-list/govukwc-summary-li
 
 | Name  |  Description     |
 |-----------|-----------|
-| `clicked` | `Fires when action has been clicked` |
+| `clicked` | Fires when action has been clicked |
 
 ## `<govukwc-summary-list-row>`
 
@@ -36,9 +36,9 @@ import 'govukwc-webcomponents/components/govukwc-summary-list/govukwc-summary-li
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| key|string|""|""
-| value|string|""|""
-| action|string|""|""| 
+| `key`|`string`|""|""
+| `value`|`string`|""|""
+| `action`|`string`|""|""| 
 
 ### Slots
 

@@ -1,8 +1,14 @@
 export const storyEvents = (story, cb) => {
   if (story.startsWith('button')) {
-    const button = document.querySelector('govukwc-button');
-    button.addEventListener('clicked', (e) => {
-      cb(e);
+    const buttons = Array.from(document.querySelectorAll('govukwc-button'));
+    buttons.forEach((button) => {
+      setTimeout(() => {
+        const el = button.shadowRoot.firstElementChild;
+        el.addEventListener('click', (e) => e.preventDefault());
+      });
+      button.addEventListener('clicked', (e) => {
+        cb(e);
+      });
     });
   }
   if (story.startsWith('summary-list')) {
@@ -29,5 +35,4 @@ export const storyEvents = (story, cb) => {
       );
     });
   }
-  console.log('STORY', story);
 };

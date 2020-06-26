@@ -17,7 +17,7 @@ export const Default = () =>
 
 export const Start = () =>
   html`<govukwc-button
-    url="javascript:void(0)"
+    url="https://www.gov.uk/"
     label="Start now"
     type="start"
   ></govukwc-button>`.getHTML();

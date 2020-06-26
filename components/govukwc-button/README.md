@@ -17,15 +17,15 @@ import 'govukwc-webcomponents/components/govukwc-button/govukwc-button';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| label|string|""|""
-| url|string|""|If url is set the ement is rendered as an anchor element
-| type|"start"  \|"secondary"\|"warning"|""|""
-| disabled|boolean|""|""
-| preventDoubleClick|boolean|""|""| 
+| `label`|`string`|""|Button label
+| `url`|`string`|""|Button url (if url is set the element is rendered as an anchor element)
+| `type`|`string`|""|Button type - one of `start`|`secondary`|`warning`
+| `disabled`|`boolean`|""|Button is in an html disabled state
+| `preventDoubleClick`|`boolean`|""|Disables event firing after first click| 
 
 ### Events
 
 | Name  |  Description     |
 |-----------|-----------|
-| `clicked` | `Fires when button has been clicked` |
+| `clicked` | Fires when button has been clicked and returns the button el in the details object |
 

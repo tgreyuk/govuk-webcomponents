@@ -1,25 +1,36 @@
 import { html, LitElement } from 'lit-element';
+import { ifDefined } from 'lit-html/directives/if-defined';
 import { classMap } from 'lit-html/directives/class-map';
 import componentStyles from './govukwc-button.styles';
 import { Button } from './govukwc-button.script';
 
 /**
- * @fires clicked - Fires when button has been clicked
+ * @fires clicked
+ * Fires when button has been clicked and returns the button el in the details object
  */
 
 export class ButtonComponent extends LitElement {
   static get properties() {
     return {
+      /**
+       * Button label
+       */
       label: { type: String },
       /**
-       * If url is set the ement is rendered as an anchor element
+       * Button url (if url is set the element is rendered as an anchor element)
        */
       url: { type: String },
       /**
-       * @type {"start"\|"secondary"\|"warning"}
+       * Button type - one of `start`|`secondary`|`warning`
        */
       type: { type: String },
+      /**
+       * Button is in an html disabled state
+       */
       disabled: { type: Boolean },
+      /**
+       * Disables event firing after first click
+       */
       preventDoubleClick: { type: Boolean },
       /**
        * @private
@@ -41,7 +52,7 @@ export class ButtonComponent extends LitElement {
   }
 
   firstUpdated() {
-    this.el = this.shadowRoot.querySelector('[data-module=govuk-button]');
+    this.el = this.shadowRoot.firstElementChild;
     new Button(this.el).init();
   }
 
@@ -93,10 +104,9 @@ export class ButtonComponent extends LitElement {
           role="button"
           draggable="false"
           class=${classMap(classes)}
-          data-module="govuk-button"
           ?disabled=${this.disabled}
           ?aria-disabled=${this.disabled}
-          data-prevent-double-click=${this.preventDoubleClick}
+          ?data-prevent-double-click=${this.preventDoubleClick}
           @click="${this.handleClick}"
         >
           ${this.label} ${this.iconTemplate()}
@@ -105,8 +115,7 @@ export class ButtonComponent extends LitElement {
           ?disabled=${this.disabled}
           ?aria-disabled=${this.disabled}
           class=${classMap(classes)}
-          data-prevent-double-click=${this.preventDoubleClick}
-          data-module="govuk-button"
+          ?data-prevent-double-click=${this.preventDoubleClick}
           @click="${this.handleClick}"
         >
           ${this.label} ${this.iconTemplate()}

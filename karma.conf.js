@@ -19,11 +19,11 @@ module.exports = (config) => {
       esm: {
         nodeResolve: true,
         coverageExclude: [
-          'components/**/*.script.js',
-          'components/**/*.test.js',
-          'components/**/*.stories.js',
-          'components/**/*.styles.js',
-          'components/**/*.docs.js',
+          '**/*.script.js',
+          '**/*.test.js',
+          '**/*.stories.js',
+          '**/*.styles.js',
+          '**/*.docs.js',
         ],
       },
       // you can overwrite/extend the config further

@@ -3,13 +3,10 @@ import componentStyles from './govukwc-breadcrumbs.styles';
 import { getSlotHTML } from '../../base/utils';
 import './govukwc-breadcrumbs-item';
 
+/**
+ * @slot default - Collection of <govukwc-breadcrumb-item> elements
+ */
 export class BreadcrumbsComponent extends LitElement {
-  static get properties() {
-    return {
-      items: { type: Array },
-    };
-  }
-
   static get styles() {
     return [componentStyles];
   }

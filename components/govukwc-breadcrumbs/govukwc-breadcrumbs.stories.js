@@ -16,14 +16,14 @@ export const Default = () =>
   html`<govukwc-breadcrumbs>
     <govukwc-breadcrumbs-item
       label="Home"
-      url="javascript:void(0)"
+      url="https://www.gov.uk/"
     ></govukwc-breadcrumbs-item>
     <govukwc-breadcrumbs-item
       label="Passports"
-      url="javascript:void(0)"
+      url="https://www.gov.uk/"
     ></govukwc-breadcrumbs-item>
     <govukwc-breadcrumbs-item
       label="Travel abroad"
-      url="javascript:void(0)"
+      url="https://www.gov.uk/"
     ></govukwc-breadcrumbs-item>
   </govukwc-breadcrumbs>`.getHTML();

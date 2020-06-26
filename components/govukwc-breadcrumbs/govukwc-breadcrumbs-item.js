@@ -4,7 +4,13 @@ import componentStyles from './govukwc-breadcrumbs.styles';
 export class BreadcrumbsItemComponent extends LitElement {
   static get properties() {
     return {
+      /**
+       * Breadcrumb url
+       */
       url: { type: String },
+      /**
+       * Breadcrumb label
+       */
       label: { type: String },
     };
   }

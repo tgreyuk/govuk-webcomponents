@@ -21,7 +21,7 @@ export class ButtonComponent extends LitElement {
        */
       url: { type: String },
       /**
-       * Button type - one of `start`|`secondary`|`warning`
+       * Button type - one of `"start"` `"secondary"` `"warning"`
        */
       type: { type: String },
       /**

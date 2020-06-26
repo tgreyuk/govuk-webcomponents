@@ -11,15 +11,6 @@ import 'govukwc-webcomponents/components/govukwc-error-summary/govukwc-error-sum
 
 ## API
 
-## `<govukwc-error-summary-item>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| target|string|""|""
-| message|string|""|""| 
-
 ## `<govukwc-error-summary>`
 
 ### Properties
@@ -33,4 +24,13 @@ import 'govukwc-webcomponents/components/govukwc-error-summary/govukwc-error-sum
 | Name  |  Description     |
 |-----------|-----------|
 | `Default` | `Messages` |
+
+## `<govukwc-error-summary-item>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| target|string|""|""
+| message|string|""|""| 
 

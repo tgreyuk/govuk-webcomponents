@@ -11,20 +11,6 @@ import 'govukwc-webcomponents/components/govukwc-accordion/govukwc-accordion';
 
 ## API
 
-## `<govukwc-accordion-section>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| heading|string|""|Heading / toggle text| 
-
-### Slots
-
-| Name  |  Description     |
-|-----------|-----------|
-| `default` | `Accordion body content` |
-
 ## `<govukwc-accordion>`
 
 ### Properties
@@ -38,4 +24,18 @@ import 'govukwc-webcomponents/components/govukwc-accordion/govukwc-accordion';
 | Name  |  Description     |
 |-----------|-----------|
 | `default` | `Accepts x number of <govuk-accordion-section> elements` |
+
+## `<govukwc-accordion-section>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| heading|string|""|Heading / toggle text| 
+
+### Slots
+
+| Name  |  Description     |
+|-----------|-----------|
+| `default` | `Accordion body content` |
 

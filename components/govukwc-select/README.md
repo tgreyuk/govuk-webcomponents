@@ -11,15 +11,6 @@ import 'govukwc-webcomponents/components/govukwc-select/govukwc-select';
 
 ## API
 
-## `<govukwc-select-option>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| label|string|""|""
-| value|string|""|""| 
-
 ## `<govukwc-select>`
 
 ### Properties
@@ -34,4 +25,13 @@ import 'govukwc-webcomponents/components/govukwc-select/govukwc-select';
 | message|string|""|""
 | pageLevel|boolean|""|""
 | invalid|boolean|""|""| 
+
+## `<govukwc-select-option>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| label|string|""|""
+| value|string|""|""| 
 

@@ -11,6 +11,20 @@ import 'govukwc-webcomponents/components/govukwc-summary-list/govukwc-summary-li
 
 ## API
 
+## `<govukwc-summary-list>`
+
+### Slots
+
+| Name  |  Description     |
+|-----------|-----------|
+| `Default` | `x number of summary-list-row components` |
+
+### Events
+
+| Name  |  Description     |
+|-----------|-----------|
+| `clicked` | `Fires when action has been clicked` |
+
 ## `<govukwc-summary-list-row>`
 
 ### Properties
@@ -26,18 +40,4 @@ import 'govukwc-webcomponents/components/govukwc-summary-list/govukwc-summary-li
 | Name  |  Description     |
 |-----------|-----------|
 | `Default` | `summary value` |
-
-## `<govukwc-summary-list>`
-
-### Slots
-
-| Name  |  Description     |
-|-----------|-----------|
-| `Default` | `x number of summary-list-row components` |
-
-### Events
-
-| Name  |  Description     |
-|-----------|-----------|
-| `clicked` | `Fires when action has been clicked` |
 

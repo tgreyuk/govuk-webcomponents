@@ -11,6 +11,15 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes/govukwc-checkboxes';
 
 ## API
 
+## `<govukwc-checkboxes>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| legend|string|""|""
+| hint|string|""|""| 
+
 ## `<govukwc-checkbox>`
 
 ### Properties
@@ -21,13 +30,4 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes/govukwc-checkboxes';
 | name|string|""|""
 | label|string|""|""
 | value|string|""|""| 
-
-## `<govukwc-checkboxes>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| legend|string|""|""
-| hint|string|""|""| 
 

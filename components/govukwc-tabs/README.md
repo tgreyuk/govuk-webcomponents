@@ -11,15 +11,6 @@ import 'govukwc-webcomponents/components/govukwc-tabs/govukwc-tabs';
 
 ## API
 
-## `<govukwc-tabs-panel>`
-
-### Properties
-
-| Property  |  Type     | Default | Description |
-|-----------|-----------|---------|-------------|
-| heading|string|""|""
-| id|""|""|""| 
-
 ## `<govukwc-tabs>`
 
 ### Properties
@@ -28,4 +19,13 @@ import 'govukwc-webcomponents/components/govukwc-tabs/govukwc-tabs';
 |-----------|-----------|---------|-------------|
 | id|string|""|""
 | title|string|""|""| 
+
+## `<govukwc-tabs-panel>`
+
+### Properties
+
+| Property  |  Type     | Default | Description |
+|-----------|-----------|---------|-------------|
+| heading|string|""|""
+| id|""|""|""| 
 

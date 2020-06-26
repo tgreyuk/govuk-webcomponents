@@ -40,6 +40,7 @@ import 'govukwc-webcomponents/components/${component}/${component}';
 ## API
 
 ${components
+  .reverse()
   .map((component) => {
     const name = path.basename(component, '.js');
 

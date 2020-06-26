@@ -4,6 +4,9 @@ playground
 storybook-static
 es-dev-server.js
 custom-elements.json
-components/**/*.scss
-components/**/*.stories.js
-components/**/*.docs.js
+**/*.scss
+**/*.stories.js
+**/*.docs.js
+**/*.test.js
+__snapshots__
+coverage

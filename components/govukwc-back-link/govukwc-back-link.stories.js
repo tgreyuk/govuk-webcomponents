@@ -15,5 +15,5 @@ export default {
 export const Default = () =>
   html`<govukwc-back-link
     label="Back"
-    url="javascript:void(0)"
+    url="https://www.gov.uk/"
   ></govukwc-back-link>`.getHTML();

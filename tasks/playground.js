@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs-extra');
-const { camelCase, startCase, sortBy } = require('lodash');
+const { camelCase, startCase, sortBy, kebabCase } = require('lodash');
 const globby = require('globby');
 const chalk = require('chalk');
 
@@ -110,8 +110,12 @@ const chalk = require('chalk');
       import { html, render } from 'lit-html';
       import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
       import { storyEvents } from '../.storybook/utils.js';
-      import * as ${component.name} from '../components/${component.el}/${component.el}.stories.js';
-      import { readme } from '../components/${component.el}/${component.el}.docs.js';
+      import * as ${component.name} from '../components/${component.el}/${
+    component.el
+  }.stories.js';
+      import { readme } from '../components/${component.el}/${
+    component.el
+  }.docs.js';
       import marked from 'marked/lib/marked.esm';
 
       const componentTemplate = (component) => html\`
@@ -120,11 +124,13 @@ const chalk = require('chalk');
           .map(([a, b]) => unsafeHTML(\`<div class="story">\${b()}</div>\`))} \`;
       const template = () => {
         return html\`
-          \${componentTemplate(${component.name})}\${unsafeHTML(marked(readme))}\`
+          \${componentTemplate(${
+            component.name
+          })}\${unsafeHTML(marked(readme))}\`
         };
       render(template(), document.querySelector('#demo'));
 
-      storyEvents('${component.name}', (e) => {
+      storyEvents('${kebabCase(component.name)}', (e) => {
         console.log(e);
       });
 

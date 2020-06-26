@@ -4,7 +4,13 @@ import componentStyles from './govukwc-back-link.styles';
 export class BackLinkComponent extends LitElement {
   static get properties() {
     return {
+      /**
+       * The back link url
+       */
       url: { type: String },
+      /**
+       * The back link label
+       */
       label: { type: String },
     };
   }
@@ -15,6 +21,7 @@ export class BackLinkComponent extends LitElement {
 
   constructor() {
     super();
+    this.label = 'Back';
   }
 
   connectedCallback() {

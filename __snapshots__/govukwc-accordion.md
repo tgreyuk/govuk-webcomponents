@@ -1,4 +1,4 @@
-# `AccordionComponent`
+# `govukwc-accordion`
 
 #### `should render`
 

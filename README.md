@@ -18,7 +18,7 @@ The web components are distributed as ES modules and can be used with any platfo
 
 ### Modern browsers (Bare module specifiers)
 
-To quickly try out components the components use the modules directly in the browser and serve with a process that supports bare module specifier resolution such as [es-dev-server](https://www.npmjs.com/package/es-dev-server).
+To quickly try the components import the modules directly in the browser and serve with a process that supports bare module specifier resolution such as [es-dev-server](https://www.npmjs.com/package/es-dev-server).
 
 ```html
 <body>
@@ -66,4 +66,3 @@ Please visit the [Storybook](https://tgreyuk.github.io/govuk-webcomponents/story
 - [\<govukwc-text-input>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-text-input/README.md)
 - [\<govukwc-textarea>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-textarea/README.md)
 - [\<govukwc-warning-text>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-warning-text/README.md)
-  

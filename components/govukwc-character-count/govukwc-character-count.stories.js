@@ -12,7 +12,7 @@ export default {
   },
 };
 
-export const MaxLength = () =>
+export const CharacterCount = () =>
   html`<govukwc-character-count
     id="char-count-length"
     name="char-count-length"
@@ -22,9 +22,9 @@ export const MaxLength = () =>
   >
   </govukwc-character-count>`.getHTML();
 
-export const MaxWords = () =>
+export const WordCount = () =>
   html`<govukwc-character-count
-    pageLevel
+    pageHeadingLabel
     id="char-count-words"
     name="char-count-words"
     label="Describe the nature of your event"

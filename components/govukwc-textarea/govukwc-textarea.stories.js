@@ -14,7 +14,7 @@ export default {
 
 export const Default = () =>
   html`<govukwc-textarea
-    pageLevel
+    pageHeadingLabel
     id="event-name"
     name="event-name"
     label="Can you provide more detail?"

@@ -14,7 +14,7 @@ export default {
 
 export const Default = () =>
   html`<govukwc-text-input
-    pageLevel
+    pageHeadingLabel
     id="event-name"
     name="event-name"
     label="What is the name of the event?"

@@ -5,6 +5,13 @@ import { FormGroup } from '../../base/form-group/form-group';
 export class TextAreaComponent extends FormGroup {
   static get properties() {
     return {
+      /**
+       * Maximum field length
+       */
+      maxlength: { type: Number },
+      /**
+       * Textarea rows
+       */
       rows: { type: Number },
     };
   }
@@ -15,6 +22,7 @@ export class TextAreaComponent extends FormGroup {
 
   constructor() {
     super();
+    this.maxlength = 500;
     this.rows = 5;
   }
 

@@ -14,7 +14,7 @@ export default {
 
 export const Default = () =>
   html`<govukwc-select
-    pageLevel
+    pageHeadingLabel
     id="sort"
     name="sort"
     label="What is the name of the event?"

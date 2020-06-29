@@ -21,6 +21,16 @@ export const Default = () =>
     hint="The name you’ll use on promotional material."
   ></govukwc-text-input>`.getHTML();
 
+export const Number = () =>
+  html`<govukwc-text-input
+    pageHeadingLabel
+    number
+    id="account-number"
+    name="account-number"
+    label="What is your account number?"
+    hint="Must be between 6 and 8 digits long"
+  ></govukwc-text-input>`.getHTML();
+
 export const Width20 = () =>
   html`<govukwc-text-input
     id="width-20"

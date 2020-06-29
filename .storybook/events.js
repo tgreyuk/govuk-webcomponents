@@ -39,6 +39,19 @@ export const storyEvents = (story, cb) => {
     });
   }
 
+  if (story.startsWith('date-input')) {
+    const dateInputs = document.querySelectorAll('govukwc-date-input');
+
+    dateInputs.forEach((dateInput) => {
+      dateInput.addEventListener('govukwc:change', (e) => {
+        cb(e);
+      });
+      dateInput.addEventListener('govukwc:keyup', (e) => {
+        cb(e);
+      });
+    });
+  }
+
   if (story.startsWith('select')) {
     const selects = document.querySelectorAll('govukwc-select');
     selects.forEach((select) => {

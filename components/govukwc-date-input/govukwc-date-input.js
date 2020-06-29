@@ -1,9 +1,20 @@
 import { html, LitElement } from 'lit-element';
 import componentStyles from './govukwc-date-input.styles';
+import fieldsetStyles from '../govukwc-fieldset/govukwc-fieldset.styles';
+import formGroupStyles from '../../base/form-group/form-group.styles';
+import '../govukwc-fieldset/govukwc-fieldset';
+import '../govukwc-text-input/govukwc-text-input';
+
+/**
+ * @fires govukwc:change - {day, month, year}
+ * Fires when on field 'change' event
+ * @fires govukwc:keyup - {day, month, year}
+ * Fires when on field 'keyup' event
+ */
 
 export class DateInputComponent extends LitElement {
   static get styles() {
-    return [componentStyles];
+    return [formGroupStyles, fieldsetStyles, componentStyles];
   }
 
   constructor() {
@@ -14,78 +25,74 @@ export class DateInputComponent extends LitElement {
     super.connectedCallback();
   }
 
+  firstUpdated() {
+    this.dayControl = this.shadowRoot.querySelector('#passport-issued-day');
+    this.monthControl = this.shadowRoot.querySelector('#passport-issued-month');
+    this.yearControl = this.shadowRoot.querySelector('#passport-issued-year');
+  }
+
+  handleChange() {
+    this.handleEvent('govukwc:change');
+  }
+
+  handleKeyup() {
+    this.handleEvent('govukwc:keyup');
+  }
+
+  handleEvent(eventName) {
+    const event = new CustomEvent(eventName, {
+      detail: {
+        day: this.dayControl.value,
+        month: this.monthControl.value,
+        year: this.yearControl.value,
+      },
+    });
+    this.dispatchEvent(event);
+  }
+
   render() {
     return html`<div class="govuk-form-group">
-      <fieldset
-        class="govuk-fieldset"
-        role="group"
-        aria-describedby="passport-issued-hint"
+      <govukwc-fieldset
+        pageHeadingLegend
+        legend="When was your passport issued?"
+        hint="For example, 12 11 2007"
       >
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-          <h1 class="govuk-fieldset__heading">
-            When was your passport issued?
-          </h1>
-        </legend>
-        <span id="passport-issued-hint" class="govuk-hint">
-          For example, 12 11 2007
-        </span>
         <div class="govuk-date-input" id="passport-issued">
           <div class="govuk-date-input__item">
-            <div class="govuk-form-group">
-              <label
-                class="govuk-label govuk-date-input__label"
-                for="passport-issued-day"
-              >
-                Day
-              </label>
-              <input
-                class="govuk-input govuk-date-input__input govuk-input--width-2"
-                id="passport-issued-day"
-                name="passport-issued-day"
-                type="text"
-                pattern="[0-9]*"
-                inputmode="numeric"
-              />
-            </div>
+            <govukwc-text-input
+              number
+              id="passport-issued-day"
+              name="passport-issued-day"
+              label="Day"
+              width="2"
+              @govukwc:change=${this.handleChange}
+              @govukwc:keyup=${this.handleKeyup}
+            ></govukwc-text-input>
           </div>
           <div class="govuk-date-input__item">
-            <div class="govuk-form-group">
-              <label
-                class="govuk-label govuk-date-input__label"
-                for="passport-issued-month"
-              >
-                Month
-              </label>
-              <input
-                class="govuk-input govuk-date-input__input govuk-input--width-2"
-                id="passport-issued-month"
-                name="passport-issued-month"
-                type="text"
-                pattern="[0-9]*"
-                inputmode="numeric"
-              />
-            </div>
+            <govukwc-text-input
+              number
+              id="passport-issued-month"
+              name="passport-issued-month"
+              label="Month"
+              width="2"
+              @govukwc:change=${this.handleChange}
+              @govukwc:keyup=${this.handleKeyup}
+            ></govukwc-text-input>
           </div>
           <div class="govuk-date-input__item">
-            <div class="govuk-form-group">
-              <label
-                class="govuk-label govuk-date-input__label"
-                for="passport-issued-year"
-              >
-                Year
-              </label>
-              <input
-                class="govuk-input govuk-date-input__input govuk-input--width-4"
-                id="passport-issued-year"
-                name="passport-issued-year"
-                type="text"
-                pattern="[0-9]*"
-                inputmode="numeric"
-              />
-            </div>
+            <govukwc-text-input
+              number
+              id="passport-issued-year"
+              name="passport-issued-year"
+              label="Year"
+              width="4"
+              @govukwc:change=${this.handleChange}
+              @govukwc:keyup=${this.handleKeyup}
+            ></govukwc-text-input>
           </div>
         </div>
-      </fieldset>
+      </govukwc-fieldset>
     </div>`;
   }
 }

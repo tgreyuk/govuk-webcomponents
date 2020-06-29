@@ -19,6 +19,11 @@ export class TextInputComponent extends FormGroup {
        * Input value
        */
       value: { type: String },
+
+      /**
+       * If value entered should be a whole number
+       */
+      number: { type: Boolean },
     };
   }
 
@@ -54,6 +59,7 @@ export class TextInputComponent extends FormGroup {
         value: this.input.value,
       },
     });
+    this.value = this.input.value;
     this.dispatchEvent(event);
   }
 
@@ -69,6 +75,8 @@ export class TextInputComponent extends FormGroup {
       id=${this.id}
       name=${this.name}
       type="text"
+      pattern="${ifDefined(this.number ? '[0-9]*' : undefined)}"
+      inputmode="${ifDefined(this.number ? 'numeric' : undefined)}"
       aria-describedby=${ifDefined(this.hintId)}
       @change=${this.handleChange}
       @keyup=${this.handleKeyup}

@@ -18,3 +18,10 @@ import 'govukwc-webcomponents/components/govukwc-date-input/govukwc-date-input';
     None
     
 
+### Events
+
+| Name  |  Detail | Description |
+|-------|---------|-------------|
+| `govukwc:change` |  `{day, month, year}`  | Fires when on field 'change' event |
+| `govukwc:keyup` |  `{day, month, year}`  | Fires when on field 'keyup' event |
+

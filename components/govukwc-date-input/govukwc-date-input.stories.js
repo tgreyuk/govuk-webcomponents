@@ -12,5 +12,5 @@ export default {
   },
 };
 
-export const basic = () =>
+export const Default = () =>
   html`<govukwc-date-input></govukwc-date-input>`.getHTML();

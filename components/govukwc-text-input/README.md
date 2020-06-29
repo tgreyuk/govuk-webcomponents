@@ -18,6 +18,7 @@ import 'govukwc-webcomponents/components/govukwc-text-input/govukwc-text-input';
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
 | `value`|`string`|""|Input value
+| `number`|`boolean`|""|If value entered should be a whole number
 | `width`|`string`|"20"|Field width setting - one of `"20"` `"10"` `"5"` `"4"` `"3"` `"2"` `"full"` `"three-quarters"` `"two-thirds"` `"one-half"` `"one-third"` `"one-quarter"`
 | `id`|`string`|""|Field id
 | `name`|`string`|""|Field name

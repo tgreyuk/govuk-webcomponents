@@ -17,8 +17,24 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes/govukwc-checkboxes';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| `legend`|`string`|""|""
-| `hint`|`string`|""|""| 
+| `small`|`boolean`|""|Flag to display small checkboxes
+| `legend`|`string`|""|Fieldset legend
+| `hint`|`string`|""|Fieldset hint
+| `invalid`|`boolean`|""|Flag to determine if is invalid (in error state)
+| `error`|`string`|""|Error text
+| `pageHeadingLegend`|`boolean`|false|Wheter to render the legend in an h1| 
+
+### Slots
+
+| Name  |  Description     |
+|-----------|-----------|
+| `default` | `Collection of <govukwc-checkbox> elements` |
+
+### Events
+
+| Name  |  Detail | Description |
+|-------|---------|-------------|
+| `govukwc:change` |  `Object containing checkbox collection details`  | Fires with any change in the checkbox collection (including conditional inputs) |
 
 ## `<govukwc-checkbox>`
 
@@ -26,8 +42,16 @@ import 'govukwc-webcomponents/components/govukwc-checkboxes/govukwc-checkboxes';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| `id`|`string`|""|""
-| `name`|`string`|""|""
-| `label`|`string`|""|""
-| `value`|`string`|""|""| 
+| `id`|`string`|""|Checkbox id
+| `name`|`string`|""|Checkbox name
+| `label`|`string`|""|Checkbox label text
+| `value`|`string`|""|Checkbox value
+| `hint`|`string`|""|Checkbox hint text
+| `checked`|`boolean`|false|Flag to set checked state| 
+
+### Slots
+
+| Name  |  Description     |
+|-----------|-----------|
+| `default` | `Conditional toggle content` |
 

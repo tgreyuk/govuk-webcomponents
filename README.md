@@ -12,32 +12,6 @@ Please note this package is not affiliated to GOV.UK but consumes code as distri
 npm install --save govuk-webcomponents
 ```
 
-## Usage
-
-The web components are distributed as ES modules and can be used with any platform.
-
-### Modern browsers (Bare module specifiers)
-
-To quickly try the components import the modules directly in the browser and serve with a process that supports bare module specifier resolution such as [es-dev-server](https://www.npmjs.com/package/es-dev-server).
-
-```html
-<body>
-  <govukwc-button label="Save and continue"></govukwc-button>
-  <script type="module">
-    import 'govuk-webcomponents/components/govukwc-button/govukwc-button';
-  </script>
-</body>
-```
-
-### Browsers to IE11 (Compiling to ES5)
-
-To support browsers (down to IE11) a combination of polyfills and build steps will need to be taken.
-
-At a highlevel outline the following is required:
-
-- Transpiling to ES5 will be required using build tools such as Webpack or Rollup.
-- The [webcomponents.js](https://www.npmjs.com/package/@webcomponents/webcomponentsjs) pollyfills will need to be loaded.
-
 ## Components
 
 Please visit the [Storybook](https://tgreyuk.github.io/govuk-webcomponents/storybook) site for demos and code examples.
@@ -66,4 +40,29 @@ Please visit the [Storybook](https://tgreyuk.github.io/govuk-webcomponents/story
 - [\<govukwc-text-input>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-text-input/README.md)
 - [\<govukwc-textarea>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-textarea/README.md)
 - [\<govukwc-warning-text>](https://github.com/tgreyuk/govuk-webcomponents/blob/master/components/govukwc-warning-text/README.md)
-  
+
+## Usage
+
+The web components are distributed as ES modules and can be used with any platform.
+
+### Modern browsers (Bare module specifiers)
+
+To quickly try the components import the modules directly in the browser and serve with a process that supports bare module specifier resolution such as [es-dev-server](https://www.npmjs.com/package/es-dev-server).
+
+```html
+<body>
+  <govukwc-button label="Save and continue"></govukwc-button>
+  <script type="module">
+    import 'govuk-webcomponents/components/govukwc-button/govukwc-button';
+  </script>
+</body>
+```
+
+### Browsers to IE11 (Compiling to ES5)
+
+To support browsers (down to IE11) a combination of polyfills and build steps will need to be taken.
+
+At a highlevel outline the following is required:
+
+- Transpiling to ES5 will be required using build tools such as Webpack or Rollup.
+- The [webcomponents.js](https://www.npmjs.com/package/@webcomponents/webcomponentsjs) pollyfills will need to be loaded.

@@ -119,4 +119,4 @@ ${components
 };
 
 compileComponentReadMes();
-updateAppReadMe();
+//updateAppReadMe();

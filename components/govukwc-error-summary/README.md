@@ -17,7 +17,7 @@ import 'govukwc-webcomponents/components/govukwc-error-summary/govukwc-error-sum
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| `title`|`string`|""|""| 
+| `title`|`string`|""|Error summary title| 
 
 ### Slots
 
@@ -31,6 +31,6 @@ import 'govukwc-webcomponents/components/govukwc-error-summary/govukwc-error-sum
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| `target`|`string`|""|""
-| `message`|`string`|""|""| 
+| `target`|`string`|""|The target id of invalid component
+| `message`|`string`|""|Associated error message| 
 

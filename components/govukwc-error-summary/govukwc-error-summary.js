@@ -11,6 +11,9 @@ import './govukwc-error-summary-item';
 export class ErrorSummaryComponent extends LitElement {
   static get properties() {
     return {
+      /**
+       * Error summary title
+       */
       title: { type: String },
     };
   }

@@ -1,6 +1,6 @@
 {
   "name": "govuk-webcomponents",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A set of encapsulated Web components consuming the GOV.UK Design System",
   "author": "Tom Grey",
   "license": "MIT",

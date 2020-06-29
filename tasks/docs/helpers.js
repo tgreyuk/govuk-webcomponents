@@ -48,16 +48,27 @@ const eventsTable = (events) => {
   if (!events) {
     return '';
   }
+
   return `
 ### Events
 
-| Name  |  Description     |
-|-----------|-----------|
+| Name  |  Detail | Description |
+|-------|---------|-------------|
 ${events
-  .map(
-    (event) =>
-      `| \`${event.name}\` | ${event.description.replace(/\n/g, '<br />')} |`,
-  )
+  .map((event) => {
+    let detail;
+    let description = event.description;
+    if (event.description) {
+      const eventData = event.description.split('\n');
+      if (eventData.length > 1) {
+        detail = eventData[0];
+        description = eventData[1];
+      }
+    }
+    return `| \`${event.name}\` | ${detail ? ` \`${detail}\` ` : '-'} | ${
+      description ? description.replace(/\n/g, '<br />') : '-'
+    } |`;
+  })
   .join('\n')}`;
 };
 

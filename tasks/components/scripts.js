@@ -67,6 +67,10 @@ compileScript('accordion', {
 });
 compileScript('button', { dropLeft: 661 });
 compileScript('character-count', { dropLeft: 1016 });
+compileScript('checkboxes', {
+  dropLeft: 1030,
+  functions: ['nodeListForEach'],
+});
 compileScript('error-summary', { dropLeft: 708 });
 compileScript('tabs', {
   dropLeft: 1070,

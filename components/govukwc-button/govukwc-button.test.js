@@ -1,6 +1,5 @@
-import { fixture, expect, defineCE, oneEvent } from '@open-wc/testing';
+import { fixture, expect, oneEvent } from '@open-wc/testing';
 import * as stories from './govukwc-button.stories';
-import { ButtonComponent } from './govukwc-button';
 
 describe('govukwc-button', () => {
   it(`should render`, async () => {
@@ -26,7 +25,7 @@ describe('govukwc-button', () => {
   it(`should fire event on click`, async () => {
     const el = await fixture(stories.Default());
     setTimeout(() => el.handleClick());
-    const { detail } = await oneEvent(el, 'clicked');
+    const { detail } = await oneEvent(el, 'govukwc:click');
     expect(el.clicked).to.be.true;
     expect(detail.el).to.not.be.undefined;
   });

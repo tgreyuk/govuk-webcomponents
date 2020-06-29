@@ -4,6 +4,11 @@ import componentStyles from './govukwc-character-count.styles';
 import { CharacterCount } from './govukwc-character-count.script';
 import { TextAreaComponent } from '../govukwc-textarea/govukwc-textarea';
 
+/**
+ * @fires govukwc:change - Fires when on field 'change' event
+ * @fires govukwc:keyup - Fires when on field 'keyup' event
+ */
+
 export class CharacterCountComponent extends TextAreaComponent {
   static get properties() {
     return {
@@ -20,22 +25,23 @@ export class CharacterCountComponent extends TextAreaComponent {
 
   constructor() {
     super();
-    this.message = `You can enter up to ${this.maxlength} characters`;
+    this.instructions = `You can enter up to ${this.maxlength} characters`;
   }
 
   connectedCallback() {
     super.connectedCallback();
   }
 
-  get infoId() {
-    return `${this.id}-info`;
-  }
-
   firstUpdated() {
+    this.textarea = this.shadowRoot.querySelector('textarea');
     const characterCount = this.shadowRoot.querySelector(
       '[ data-module=govuk-character-count]',
     );
     new CharacterCount(characterCount).init();
+  }
+
+  get infoId() {
+    return `${this.id}-info`;
   }
 
   renderControl() {
@@ -52,13 +58,15 @@ export class CharacterCountComponent extends TextAreaComponent {
         rows=${this.rows}
         aria-describedby="${this.infoId}${this.hintId ? ' ' + this.hintId : ''}"
         maxlength=${this.maxlength}
+        @change=${this.handleChange}
+        @keyup=${this.handleKeyup}
       ></textarea>
       <span
         id=${this.infoId}
         class="govuk-hint govuk-character-count__message"
         aria-live="polite"
       >
-        ${this.message}
+        ${this.instructions}
       </span>
     </div> `;
   }

@@ -17,6 +17,9 @@ import 'govukwc-webcomponents/components/govukwc-fieldset/govukwc-fieldset';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| `legend`|`string`|""|""
-| `hint`|`string`|""|""| 
+| `legend`|`string`|""|Fieldset legend
+| `hint`|`string`|""|Fieldset hint
+| `invalid`|`boolean`|""|Flag to determine if is invalid (in error state)
+| `error`|`string`|""|Error text
+| `pageHeadingLegend`|`boolean`|false|Wheter to render the legend in an h1| 
 

@@ -26,9 +26,10 @@ import 'govukwc-webcomponents/components/govukwc-summary-list/govukwc-summary-li
 
 ### Events
 
-| Name  |  Description     |
-|-----------|-----------|
-| `clicked` | Fires when action has been clicked |
+| Name  |  Detail | Description |
+|-------|---------|-------------|
+| `clicked` | - | Fires when action has been clicked |
+| `govukwc:click` | - | - |
 
 ## `<govukwc-summary-list-row>`
 

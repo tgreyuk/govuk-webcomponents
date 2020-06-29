@@ -41,7 +41,7 @@ export class SummaryListComponent extends LitElement {
       rows.forEach((row, index) => {
         row.addEventListener('click', (e) => {
           e.preventDefault();
-          const event = new CustomEvent('clicked', {
+          const event = new CustomEvent('govukwc:click', {
             detail: {
               selectedIndex: index,
               key: row.getAttribute('data-key'),

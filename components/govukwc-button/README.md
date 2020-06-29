@@ -20,12 +20,12 @@ import 'govukwc-webcomponents/components/govukwc-button/govukwc-button';
 | `label`|`string`|""|Button label
 | `url`|`string`|""|Button url (if url is set the element is rendered as an anchor element)
 | `type`|`string`|""|Button type - one of `"start"` `"secondary"` `"warning"`
-| `disabled`|`boolean`|""|Button is in an html disabled state
-| `preventDoubleClick`|`boolean`|""|Disables event firing after first click| 
+| `disabled`|`boolean`|false|Button is in an html disabled state
+| `preventDoubleClick`|`boolean`|false|Disables event firing after first click| 
 
 ### Events
 
-| Name  |  Description     |
-|-----------|-----------|
-| `clicked` | Fires when button has been clicked and returns the button el in the details object |
+| Name  |  Detail | Description |
+|-------|---------|-------------|
+| `govukwc:click` |  `{el:HTMLElement}`  | Fires when button has been clicked |
 

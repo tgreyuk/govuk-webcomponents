@@ -17,12 +17,20 @@ import 'govukwc-webcomponents/components/govukwc-text-input/govukwc-text-input';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| `width`|`"20"  \|"10"\|"5"\|"4"\|"3"\|"2"\|"full"\|"three-quarters"\|"two-thirds"\|"one-half"\|"one-third"\|"one-quarter"`|"20"|""
+| `value`|`string`|""|Input value
+| `width`|`string`|"20"|Field width setting - one of `"20"` `"10"` `"5"` `"4"` `"3"` `"2"` `"full"` `"three-quarters"` `"two-thirds"` `"one-half"` `"one-third"` `"one-quarter"`
 | `id`|`string`|""|Field id
 | `name`|`string`|""|Field name
 | `label`|`string`|""|Label text
 | `hint`|`string`|""|Hint text
 | `error`|`string`|""|Error  text
-| `pageHeadingLabel`|`boolean`|""|Determines if the label should be treated as a page level h1
-| `invalid`|`boolean`|""|Flag to define if field is in an invalid (error) state| 
+| `pageHeadingLabel`|`boolean`|false|Determines if the label should be treated as a page level h1
+| `invalid`|`boolean`|false|Flag to define if field is in an invalid (error) state| 
+
+### Events
+
+| Name  |  Detail | Description |
+|-------|---------|-------------|
+| `govukwc:change` | - | Fires when on field 'change' event |
+| `govukwc:keyup` | - | Fires when on field 'keyup' event |
 

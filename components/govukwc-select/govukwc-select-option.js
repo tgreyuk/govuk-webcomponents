@@ -3,7 +3,13 @@ import { html, LitElement } from 'lit-element';
 export class SelectOptionComponent extends LitElement {
   static get properties() {
     return {
+      /**
+       * Option label
+       */
       label: { type: String },
+      /**
+       * Option value
+       */
       value: { type: String },
     };
   }

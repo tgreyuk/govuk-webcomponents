@@ -22,8 +22,14 @@ import 'govukwc-webcomponents/components/govukwc-select/govukwc-select';
 | `label`|`string`|""|Label text
 | `hint`|`string`|""|Hint text
 | `error`|`string`|""|Error  text
-| `pageHeadingLabel`|`boolean`|""|Determines if the label should be treated as a page level h1
-| `invalid`|`boolean`|""|Flag to define if field is in an invalid (error) state| 
+| `pageHeadingLabel`|`boolean`|false|Determines if the label should be treated as a page level h1
+| `invalid`|`boolean`|false|Flag to define if field is in an invalid (error) state| 
+
+### Events
+
+| Name  |  Detail | Description |
+|-------|---------|-------------|
+| `govukwc:change` | - | Fires when on field 'change' event |
 
 ## `<govukwc-select-option>`
 
@@ -31,6 +37,6 @@ import 'govukwc-webcomponents/components/govukwc-select/govukwc-select';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| `label`|`string`|""|""
-| `value`|`string`|""|""| 
+| `label`|`string`|""|Option label
+| `value`|`string`|""|Option value| 
 

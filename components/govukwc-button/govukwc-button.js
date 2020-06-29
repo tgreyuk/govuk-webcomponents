@@ -1,12 +1,11 @@
 import { html, LitElement } from 'lit-element';
-import { ifDefined } from 'lit-html/directives/if-defined';
 import { classMap } from 'lit-html/directives/class-map';
 import componentStyles from './govukwc-button.styles';
 import { Button } from './govukwc-button.script';
 
 /**
- * @fires clicked
- * Fires when button has been clicked and returns the button el in the details object
+ * @fires govukwc:click - {el:HTMLElement}
+ * Fires when button has been clicked
  */
 
 export class ButtonComponent extends LitElement {
@@ -45,6 +44,8 @@ export class ButtonComponent extends LitElement {
 
   constructor() {
     super();
+    this.disabled = false;
+    this.preventDoubleClick = false;
   }
 
   connectedCallback() {
@@ -63,11 +64,7 @@ export class ButtonComponent extends LitElement {
     if (this.preventDoubleClick && this.clicked) {
       return;
     }
-    const event = new CustomEvent('clicked', {
-      detail: {
-        el: this.el,
-      },
-    });
+    const event = new CustomEvent('govukwc:click', { detail: { el: this.el } });
     this.dispatchEvent(event);
     this.clicked = true;
   }

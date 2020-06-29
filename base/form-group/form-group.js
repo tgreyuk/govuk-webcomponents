@@ -1,6 +1,7 @@
 import { html, LitElement } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import utilitiesStyles from '../styles/utilities.styles';
+import overridesStyles from '../styles/overrides.styles';
 import elementStyles from './form-group.styles';
 
 export class FormGroup extends LitElement {
@@ -37,7 +38,13 @@ export class FormGroup extends LitElement {
     };
   }
   static get styles() {
-    return [utilitiesStyles, elementStyles];
+    return [overridesStyles, utilitiesStyles, elementStyles];
+  }
+
+  constructor() {
+    super();
+    this.pageHeadingLabel = false;
+    this.invalid = false;
   }
 
   get hintId() {

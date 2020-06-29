@@ -17,8 +17,12 @@ import 'govukwc-webcomponents/components/govukwc-radios/govukwc-radios';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| `legend`|`string`|""|""
-| `hint`|`string`|""|""| 
+| `inline`|`boolean`|false|Flag to display inline radios
+| `legend`|`string`|""|Fieldset legend
+| `hint`|`string`|""|Fieldset hint
+| `invalid`|`boolean`|""|Flag to determine if is invalid (in error state)
+| `error`|`string`|""|Error text
+| `pageHeadingLegend`|`boolean`|false|Wheter to render the legend in an h1| 
 
 ## `<govukwc-radio>`
 
@@ -26,8 +30,9 @@ import 'govukwc-webcomponents/components/govukwc-radios/govukwc-radios';
 
 | Property  |  Type     | Default | Description |
 |-----------|-----------|---------|-------------|
-| `id`|`string`|""|""
-| `name`|`string`|""|""
-| `label`|`string`|""|""
-| `value`|`string`|""|""| 
+| `id`|`string`|""|Radio id
+| `name`|`string`|""|Radio name
+| `label`|`string`|""|Radio label
+| `value`|`string`|""|Radio value
+| `hint`|`string`|""|Radio hint text| 
 

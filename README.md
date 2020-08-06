@@ -4,7 +4,7 @@ A set of encapsulated [Web Components](https://developer.mozilla.org/en-US/docs/
 
 [![npm](https://img.shields.io/npm/v/govuk-webcomponents.svg)](https://www.npmjs.com/package/govuk-webcomponents)
 
-Please note this package is not affiliated to GOV.UK but consumes code as distributed in the [govuk-frontend](https://www.npmjs.com/package/govuk-frontend) npm package (v3.7.0).
+Please note this package is not affiliated to GOV.UK but consumes code as distributed in the [govuk-frontend](https://www.npmjs.com/package/govuk-frontend) npm package (v3.8.0).
 
 ## Installation
 
